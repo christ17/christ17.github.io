@@ -4,7 +4,7 @@ html, body {
   margin: 0px;
   padding: 0px;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: "Carrois Gothic", Arial, sans-serif;
 }
 div {
@@ -23,12 +23,18 @@ div {
   background-repeat: no-repeat;
   color: #fff;
 }
+@media screen and (min-width: 760px) {
+  #welcome {
+    background-attachment: fixed;
+  }
+}
 .navbar {
   width: 100%;
   min-height: 55px;
   background-color: transparent;
   color: #a9a9a9;
   font-family: "Carrois Gothic", Arial, sans-serif;
+  font-size: 20px;
 }
 .navbar ul {
   display: inline-block;
@@ -40,7 +46,6 @@ div {
   list-style-type: none;
   margin-left: 7.5px;
   margin-right: 7.5px;
-  font-size: 20px;
 }
 .navbar a {
   text-decoration: none;
@@ -49,8 +54,12 @@ div {
 .navbar li > a:hover {
   text-decoration: underline;
 }
-.fixed {
+.body .navbar {
   text-align: right;
+}
+.toggle-fixed {
+  position:fixed;
+  top:0;
 }
 .align-left {
   float: left;
@@ -58,7 +67,6 @@ div {
 }
 .fa-bars {
   margin: 12.5px;
-  font-size: 20px;
 }
 @media screen and (min-width: 760px){
   .toggle-collapse {
@@ -93,6 +101,7 @@ div {
 .content {
   width: 90%;
   margin: auto;
+  top: 55px;
 }
 .body {
   width: 100%;
