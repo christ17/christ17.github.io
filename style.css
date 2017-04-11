@@ -57,16 +57,22 @@ div {
 .body .navbar {
   text-align: right;
 }
-.toggle-fixed {
-  position:fixed;
-  top:0;
+.fixed-top {
+  position: fixed;
+  top: 0;
+}
+.fixed-bottom {
+  position: relative;
+  top: 55px;
+  bottom: 0;
 }
 .align-left {
   float: left;
   margin: 12.5px;
 }
 .fa-bars {
-  margin: 12.5px;
+  font-size: 35px;
+  margin: 5px;
 }
 @media screen and (min-width: 760px){
   .toggle-collapse {
@@ -75,6 +81,8 @@ div {
 }
 @media screen and (max-width: 760px){
   #collapse {
+    box-shadow: 1px 1px 2px grey;
+    text-align: center;
     display: none;
   }
 }
