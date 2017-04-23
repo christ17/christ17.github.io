@@ -6,6 +6,7 @@ html, body {
 }
 h1, h2 {
   font-family: "Carrois Gothic", Arial, sans-serif;
+  color: #3A687F;
 }
 div {
   width: 100%;
@@ -32,7 +33,7 @@ div {
   width: 100%;
   min-height: 55px;
   background-color: transparent;
-  color: #a9a9a9;
+  color: #C9A956;
   font-family: "Carrois Gothic", Arial, sans-serif;
   font-size: 20px;
 }
@@ -92,9 +93,11 @@ div {
   margin-top: 15vh;
   margin-bottom: 10vh;
   font-size: 2.5em;
+  color: #fff;
 }
 .header h2 {
   font-size: 1.75em;
+  color: #fff;
 }
 .fa-arrow-circle-down {
   color: #fff;
@@ -109,11 +112,40 @@ div {
   }
 }
 .content {
-  width: 90%;
-  margin: auto;
+  width: 100%;
   top: 55px;
+  color: #000;
+  font-size: 14pt;
 }
 .body {
   width: 100%;
+  text-align: center;
+}
+.normal, .alternate {
+  width: 90%;
+  padding: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  line-height: 1.5;
   text-align: left;
+}
+.normal {
+  background-color: white;
+}
+.alternate {
+  background-color: #f6f6f6;
+}
+.body > .content > div > a {
+  display: block;
+  height: 55px;
+  margin-top: -55px;
+  visibility: hidden;
+}
+#toProject {
+  display: inline-block;
+  padding: 1.5%;
+}
+#toProject > a {
+  text-decoration: none;
+  color: #8eaebd;
 }
