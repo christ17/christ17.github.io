@@ -30,7 +30,7 @@
       <div id="collapse">
         <ul>
           <li><a href="#methods">Methods</a></li>
-          <li><a href="#analysis">Analysis</a></li>
+          <li><a href="#data">Data</a></li>
           <li><a href="#discussion">Discussion</a></li>
           <li><a href="#conclusion">Conclusion</a></li>
           <li><a href="#bibliography">Bibliography</a></li>
@@ -51,16 +51,22 @@
         </p>
       </div>
       <div class="alternate">
-        <a id="analysis"></a>
-        <h1>Analysis</h1>
+        <a id="data"></a>
+        <h1>Data</h1>
+        <p>To see the full data, click here: <a href="https://tinyurl.com/n6g6q8a">Machine Learning Flu Data</a></p>
       </div>
       <div class="normal">
         <a id="discussion"></a>
         <h1>Discussion</h1>
+        <p>The capability of my algorithms to accurately predict potential influenza strains is predicated upon the assumptions that antigenic drift occurs as a steady rate and that certain parts of the genome, and by extension, the amino acid sequence, are conserved, which means percent similarities among common strains should be fairly similar. However, the anomaly of the 2009 H1N1 influenza virus, which is an instance of antigenic shift, most likely skewed my data for the glycoprotein amino acid sequences for H1N1, as well as the mean percent similarities and the calculated percent error. This, however, is not entirely true, as the percent error for hemagglutinin for H1N1 is indeed above 5%, while the percent error for neuraminidase is remarkably low, at about 1.1%. Aside from the H1N1 hemagglutinin proteins, the percent error for my algorithms were all below 5%.</p>
+        <p>As shown by my data, there was little discrepancy between the additive and multiplicative algorithms, with neither being significantly more accurate than the other. This may be due to both relying heavily on probability, since I was attempting to conserve a significant portion of the genome. However, my algorithms overestimated the rate of antigenic drift, as their percent similarities tended to be lower than what the actual data demonstrated. This was likely due to the use of randomization, which models random mutations, but does not account for the selective pressure in reality.</p>
       </div>
       <div class="alternate">
         <a id="conclusion"></a>
         <h1>Conclusion</h1>
+        <p>My algorithms were able to almost nearly match the actual rate of antigenic drift, assuming it is relatively constant, conserving certain parts of the genome while allowing for random mutations that lead to changes in the antigens, preventing the immune systems from recognizing it. Thus, the strains produced by the computer could possibly be virulent, and so the predictions can be deemed accurate.</p>
+        <p>Based on BLAST analyses, the strains produced by the computer were less similar to the common strains than the common strains were to each other, suggesting an overestimation of the rate of antigenic drift. However, the percent error was mostly below 5%, with the only exceptions being due to an anomalous flu strain.</p>
+        <p>While it is only a rough framework at this point, it could certainly be improved to account for more factors that would lead to more accurate predictions that would be anticipatory as opposed to reactionary, as our vaccinations currently are. For instance, additional biases accounting for time of origin or tendencies of polypeptides could contribute to more accurate algorithms. Essentially, this experiment demonstrates the potential applications of bioinformatics to solve complex problems in medicine and biology. </p>
       </div>
       <div class="normal">
         <a id="bibliography"></a>
