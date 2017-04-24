@@ -19,13 +19,13 @@ div {
   text-align: center;
 }
 #welcome {
-  background: linear-gradient(rgba(0,0,0, .75), rgba(0,0,0, .75)), url("code.jpg");
+  background: linear-gradient(rgba(0,0,0, .75), rgba(0,0,0, .75)), url("pictures/code.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
 }
 @media screen and (min-width: 760px) {
-  #welcome {
+  #welcome, #bio1, #bio2, #bio3, #bio4 {
     background-attachment: fixed;
   }
 }
@@ -54,6 +54,9 @@ div {
 }
 .navbar li > a:hover {
   text-decoration: underline;
+}
+body > .navbar {
+  text-align: center;
 }
 .body .navbar {
   text-align: right;
@@ -148,4 +151,44 @@ div {
 #toProject > a {
   text-decoration: none;
   color: #8eaebd;
+}
+.bio {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  padding: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-size: 16pt;
+  font-family: 'Carrois Gothic';
+  color: #eee;
+  letter-spacing: 0.05em;
+  line-height: 25pt;
+}
+#bio1 {
+  background: linear-gradient(rgba(0,0,0, .75), rgba(0,0,0, .75)), url("pictures/arch.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bio2 {
+  background: linear-gradient(rgba(0,0,0, .75), rgba(0,0,0, .75)), url("pictures/stanford.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bio3 {
+  background: linear-gradient(rgba(0,0,0, .75), rgba(0,0,0, .75)), url("pictures/lake.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bio4 {
+  background: linear-gradient(rgba(0,0,0, .75), rgba(0,0,0, .75)), url("pictures/school.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
