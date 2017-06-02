@@ -192,3 +192,7 @@ body > .navbar {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.wrap {
+  width: 100vw;
+  max-width: 100vw;
+}
