@@ -12,15 +12,15 @@ div {
   padding: 0px;
   display: block;
 }
-/*Navigation bar*/
+/*Navigation*/
 #menu {
   position: fixed;
   top: 0px;
   right: 0px;
   background-color: transparent;
   border: none;
+  color: #203157;
   padding: 10px;
-  color: #A47045;
   font-size: 1.5em;
 }
 @media screen and (min-width: 760px) {
@@ -28,17 +28,16 @@ div {
     font-size: 2em;
   }
 }
-.collapse {
+#menu-collapse {
+  margin: none;
+  padding: none;
   display: none;
   z-index: 2;
-}
-.navbar {
-  height: 70px;
-  font-size: 15px;
   background-color: #F0EEEE;
 }
-.navbar ul {
-  margin-top: auto;
+nav > ul {
+  margin: none;
+  padding: none;
   list-style-type: none;
 }
 .navbar ul > li {
@@ -51,7 +50,7 @@ div {
   margin-left: 20px;
   margin-right: 20px;
 }
-#homepage {
+#welcome {
   background-image:  linear-gradient(rgba(20,40,60,.5), rgba(20,40,60,.5)), url('lake.jpg');
   background-repeat: no-repeat;
   background-position: center top;
