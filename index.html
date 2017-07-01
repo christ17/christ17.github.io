@@ -2,42 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bio Presentation</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project AmaRNA- Home</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="main.js"></script>
 </head>
 <body>
-  <div class="header" id="welcome">
-    <div class="navbar">
-      <ul>
-        <li><a href="index.html">Bio</a></li>
-        <li>&frasl;</li>
-        <li><a href="intro.html">Intro</a></li>
-        <li>&frasl;</li>
-        <li><a href="project.html">Project</a></li>
-      </ul>
+  <div class="header">
+    <div id="navbar">
+      <button id="menu">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse">
+        <nav id="primary-navigation">
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="diseases.html">Diseases</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav id="secondary-navigation">
+        </nav>
+      </div>
     </div>
   </div>
   <div class="body">
-    <div class="content wrap">
-      <div class="normal">
-        <h3>A/California/07/2009 Hemagglutinin</h3>
-        <p><a href="http://www.rcsb.org/pdb/ngl/ngl.do?pdbid=3LZG&bionumber=1">http://www.rcsb.org/pdb/ngl/ngl.do?pdbid=3LZG&bionumber=1</a></p>
-      </div>
-      <div class="alternate">
-        <h3>A/Washington/05/2011 Hemagglutinin</h3>
-        <p><a href="http://www.rcsb.org/pdb/ngl/ngl.do?pdbid=4LXV&bionumber=1">http://www.rcsb.org/pdb/ngl/ngl.do?pdbid=4LXV&bionumber=1</a></p>
-      </div>
-      <div class="normal">
-        <h3>BLAST</h3>
-        <p><a href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastp&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome">Protein Blast</a></p>
-        <p>A/California/07/2009 Accession Number: AMV49023</p>
-        <p>A/Washington/05/2011 Accession Number: AGK72598</p>
+    <div class="fullpage" id="homepage">
+      <div class="content">
+        <h1 id="title">Project AmaRNA</h1>
+        <h3 id="subtitle">Empowering patients and their families</h3>
+        <span class="fa fa-chevron-down fa-2x"></span>
       </div>
     </div>
+    <div class="fullpage">
+      <div class="content">
+        <h1>Explore our content</h1>
+        <hr>
+        <p>Read articles on the latest research on diseases and treatments, authored by our very own medical students.</p>
+        <button>Explore</button>
+      </div>
+    </div>
+    <div class="fullpage alternate">
+      <div class="content">
+        <h1>Learn about diseases</h1>
+        <hr>
+        <p>We try to make the biology involved with diseases easy to understand, yet accurate and complete.</p>
+        <button>Learn</button>
+      </div>
+    </div>
+    <div class="fullpage">
+      <div class="content">
+        <h1>Get to know us</h1>
+        <hr>
+        <p>Take a quick look inside our organization! Learn about our mission, the origins of our name, and about our team members.</p>
+        <button>Meet Us</button>
+      </div>
+    </div>
+    <div class="fullpage alternate">
+      <div class="content">
+        <h1>Connect with us</h1>
+        <hr>
+        <p>We're human too! All of us want to help people, and we're passionate about what we do. Let us know how we can make this experience more comfortable for you.</p>
+        <button>Connect</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
   </div>
 </body>
 </html>
