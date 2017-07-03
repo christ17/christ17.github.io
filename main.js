@@ -10,4 +10,8 @@ $(document).ready(function(){
       collapsed = true;
     }
   });
+  $("nav > ul > li > a").click(function(){
+    $("#menu-collapse").css("display", "none");
+    collapsed = true;
+  });
 });
