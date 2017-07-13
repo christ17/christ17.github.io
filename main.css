@@ -64,8 +64,9 @@ nav > ul {
   background-position: center top;
   background-size: cover;
   color: #FFFFFF; }
-  #welcome a {
-    color: #FFFFFF; }
+  @media screen and (min-width: 1024px) {
+    #welcome {
+      background-attachment: fixed; } }
 
 #title {
   color: #FFFFFF;
@@ -82,8 +83,7 @@ nav > ul {
   font-size: 1.5em;
   font-family: "Hind";
   margin: 0px;
-  padding-top: 1vh;
-  padding-bottom: 20vh; }
+  padding-top: 1vh; }
   @media screen and (min-width: 760px) {
     #subtitle {
       font-size: 2.5em; } }
