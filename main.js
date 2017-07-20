@@ -14,6 +14,7 @@ $(document).ready(function(){
   });
   $("nav > ul > li > a").click(function(){
     $("#menu-collapse").css("display", "none");
+    $("#menu > span").attr('class', 'fa fa-bars');
     collapsed = true;
   });
 });
