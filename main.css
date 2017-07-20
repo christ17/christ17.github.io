@@ -31,10 +31,12 @@
   z-index: 2;
   display: none;
   overflow-x: hidden;
-  background-color: #F3F3F3;
+  background-color: #0F1D3E;
+  opacity: .975;
   font-family: "Montserrat"; }
   #menu-collapse h3 {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    color: white; }
   #menu-collapse hr {
     float: left;
     clear: both;
@@ -42,7 +44,7 @@
     width: 15px;
     border-width: 3px;
     border-style: solid;
-    border-color: black;
+    border-color: white;
     margin-bottom: 20px; }
 
 nav > ul {
@@ -50,13 +52,12 @@ nav > ul {
   nav > ul > li {
     display: block;
     clear: both;
-    padding: 5px 0px;
-    border-bottom-style: solid;
-    border-bottom-width: 0.25px;
-    border-bottom-color: #AAAAAA; }
+    padding: 5px 0px; }
     nav > ul > li > a {
-      color: #A47045;
+      color: #E09F55;
       text-decoration: none; }
+    nav > ul > li > a:hover {
+      text-decoration: underline; }
 
 #welcome {
   background-image: linear-gradient(rgba(20, 40, 60, 0.5), rgba(20, 40, 60, 0.5)), url("images/lake.jpg");
@@ -104,11 +105,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
 h1 {
-  color: #0F1D3E;
+  color: #203157;
   font-size: 1.75em; }
 
 hr {
-  border-color: #A47045;
+  border-color: #E09F55;
   width: 40%; }
 
 button {
