@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Hind:300|Montserrat|Raleway");
-#menu-collapse, nav > ul, html, body, div {
+@import url("https://fonts.googleapis.com/css?family=Hind|Montserrat|Raleway");
+#menu-collapse, nav > ul, html, body, .header, .body, .footer {
   margin: 0px;
   padding: 0px; }
 
-#menu-collapse, .fullpage {
+#menu-collapse, .body, .fullpage {
   height: 100vh;
-  width: 100%; }
+  min-height: 100vh;
+  width: 100%;
+  min-width: 100%; }
 
 #menu, #menu-collapse {
   position: fixed; }
 
-/*Page-specific*/
 /*Navigation Menu*/
 #menu {
   right: 0px;
@@ -18,7 +19,7 @@
   z-index: 3;
   background-color: transparent;
   border: none;
-  color: #203157;
+  color: #1143B6;
   padding: 1px 10px;
   font-size: 1.5em; }
 
@@ -26,15 +27,18 @@
   #menu {
     font-size: 2em; } }
 #menu-collapse {
+  min-width: 0px;
   max-width: 420px;
   right: 0px;
   z-index: 2;
   display: none;
   overflow-x: hidden;
-  background-color: #0F1D3E;
+  background-color: #21096F;
   opacity: .975;
   font-family: "Montserrat"; }
   #menu-collapse h3 {
+    font-size: 1.3em;
+    margin-top: 10px;
     margin-bottom: 0px;
     color: white; }
   #menu-collapse hr {
@@ -45,89 +49,129 @@
     border-width: 3px;
     border-style: solid;
     border-color: white;
-    margin-bottom: 20px; }
+    margin: 8px 0px 20px 0px; }
 
 nav > ul {
   list-style-type: none; }
   nav > ul > li {
     display: block;
     clear: both;
-    padding: 5px 0px; }
+    padding: 3.5px 0px;
+    font-family: "Montserrat";
+    font-size: 16px; }
     nav > ul > li > a {
-      color: #E09F55;
+      color: #FFAA00;
       text-decoration: none; }
     nav > ul > li > a:hover {
+      color: #FFAA00;
       text-decoration: underline; }
 
 #welcome {
-  background-image: linear-gradient(rgba(20, 40, 60, 0.5), rgba(20, 40, 60, 0.5)), url("images/lake.jpg");
+  text-align: left;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("images/logo.png");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  color: #FFFFFF; }
-  @media screen and (min-width: 1024px) {
-    #welcome {
-      background-attachment: fixed; } }
+  background-position: center; }
+  #welcome hr {
+    display: block;
+    clear: both;
+    float: left;
+    width: 67%; }
+  #welcome p {
+    clear: both;
+    font-family: "Raleway"; }
+    @media screen and (min-width: 760px) {
+      #welcome p {
+        font-size: 2.5vh; } }
 
 #title {
-  color: #FFFFFF;
-  font-size: 2.25em;
+  color: black;
+  font-size: 12.5vw;
   margin: 0px;
-  padding-top: 30vh;
-  padding-bottom: 1vh; }
-  @media screen and (min-width: 760px) {
+  margin-bottom: 24px;
+  padding-top: 35vh; }
+  @media screen and (orientation: landscape) {
     #title {
-      font-size: 5em;
-      padding-top: 20vh; } }
+      font-size: 6vw;
+      padding-top: 40vh; } }
 
-#subtitle {
-  font-size: 1.5em;
-  font-family: "Hind";
-  margin: 0px;
-  padding-top: 1vh; }
-  @media screen and (min-width: 760px) {
-    #subtitle {
-      font-size: 2.5em; } }
+.container h4 {
+  padding: 5.5px 0px; }
+
+.container h5 {
+  font-family: "Raleway"; }
+
+.container hr {
+  margin: 7.5vh auto; }
+
+input[type=text] {
+  background-color: #FFFDE9;
+  border: none;
+  padding: 5px;
+  font-family: "Montserrat";
+  width: 80vw;
+  max-width: 400px; }
+
+input:focus {
+  outline: none;
+  border: 1.5px solid #FFAA00; }
+
+form > .row {
+  padding: 10px 0px; }
 
 /*General Styling*/
 html, body {
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  font-family: "Hind", sans-serif; }
-
-div {
-  width: 100%;
-  display: block; }
+  font-family: "Roboto", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
   font-weight: normal; }
 
 h1 {
-  color: #203157;
-  font-size: 1.75em; }
+  color: #21096F;
+  font-size: 1.75em;
+  margin-bottom: 24px; }
+  @media screen and (min-width: 760px) {
+    h1 {
+      font-size: 2.25em; } }
 
 hr {
-  border-color: #E09F55;
-  width: 40%; }
+  border: #FFAA00 solid 2px;
+  width: 40%;
+  margin: auto;
+  margin-top: -16px;
+  margin-bottom: 24px; }
 
 button {
-  background-color: #203157;
+  background-color: #009999;
   border: none;
   color: #EEEEEE;
   font-family: "Raleway";
   font-size: 16px;
   padding: 15px 50px; }
 
+button:focus {
+  outline: 0; }
+
+.header, .body, .footer {
+  width: 100%;
+  display: block; }
+
 .fullpage {
   text-align: center; }
 
 .content {
-  width: 80%;
+  width: 100%;
   padding: 5% 10%; }
 
 .alternate {
-  background-color: #EEEEEE; }
+  background-color: #F0EEDA; }
+
+#page-title {
+  color: black;
+  font-size: 10vw; }
+  @media screen and (orientation: landscape) {
+    #page-title {
+      font-size: 6vw; } }
 
 /*# sourceMappingURL=main.css.map */
