@@ -4,7 +4,6 @@
   padding: 0px; }
 
 #menu-collapse, .body, .fullpage {
-  height: 100vh;
   min-height: 100vh;
   width: 100%;
   min-width: 100%; }
@@ -33,7 +32,7 @@
   z-index: 2;
   display: none;
   overflow-x: hidden;
-  background-color: #21096F;
+  background-color: #082568;
   opacity: .975;
   font-family: "Montserrat"; }
   #menu-collapse h3 {
@@ -105,7 +104,7 @@ nav > ul {
   margin: 7.5vh auto; }
 
 input[type=text] {
-  background-color: #FFFDE9;
+  background-color: #FFF8E9;
   border: none;
   padding: 5px;
   font-family: "Montserrat";
@@ -128,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
 h1 {
-  color: #21096F;
+  color: #082568;
   font-size: 1.75em;
   margin-bottom: 24px; }
   @media screen and (min-width: 760px) {
@@ -165,7 +164,7 @@ button:focus {
   padding: 5% 10%; }
 
 .alternate {
-  background-color: #F0EEDA; }
+  background-color: #F0E9DA; }
 
 #page-title {
   color: black;
