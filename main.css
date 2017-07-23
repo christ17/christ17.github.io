@@ -34,7 +34,7 @@
   overflow-x: hidden;
   background-color: #082568;
   opacity: .975;
-  font-family: "Montserrat"; }
+  font-family: "Raleway"; }
   #menu-collapse h3 {
     font-size: 1.3em;
     margin-top: 10px;
@@ -103,11 +103,16 @@ nav > ul {
 .container hr {
   margin: 7.5vh auto; }
 
+.container span {
+  font-size: 1.75em;
+  font-family: "Montserrat";
+  color: #EE0000; }
+
 input[type=text], textarea {
   background-color: #FFF8E9;
   border: none;
   padding: 5px;
-  font-family: "Montserrat";
+  font-family: "Raleway";
   width: 80vw;
   max-width: 400px; }
 
@@ -119,9 +124,9 @@ textarea {
   height: 200px; }
 
 input[type=submit] {
-  background-color: #009999;
+  background-color: #62AAFA;
   border: none;
-  color: #EEEEEE;
+  color: #FFFFFF;
   font-family: "Raleway";
   font-size: 16px;
   padding: 15px 50px;
@@ -136,7 +141,7 @@ form > .row {
 
 /*General Styling*/
 html, body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
@@ -158,9 +163,9 @@ hr {
   margin-bottom: 24px; }
 
 button {
-  background-color: #009999;
+  background-color: #62AAFA;
   border: none;
-  color: #EEEEEE;
+  color: #FFFFFF;
   font-family: "Raleway";
   font-size: 16px;
   padding: 15px 50px; }
