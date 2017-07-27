@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Hind|Montserrat|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Libre+Franklin:300");
 #menu-collapse, nav > ul, html, body, .header, .body, .footer {
   margin: 0px;
   padding: 0px; }
@@ -34,7 +34,7 @@
   overflow-x: hidden;
   background-color: #082568;
   opacity: .975;
-  font-family: "Raleway"; }
+  font-family: "Libre Franklin"; }
   #menu-collapse h3 {
     font-size: 1.3em;
     margin-top: 10px;
@@ -78,7 +78,7 @@ nav > ul {
     width: 67%; }
   #welcome p {
     clear: both;
-    font-family: "Raleway"; }
+    font-family: "Libre Franklin"; }
     @media screen and (min-width: 760px) {
       #welcome p {
         font-size: 2.5vh; } }
@@ -98,7 +98,7 @@ nav > ul {
   padding: 5.5px 0px; }
 
 .container h5 {
-  font-family: "Raleway"; }
+  font-family: "Libre Franklin"; }
 
 .container hr {
   margin: 7.5vh auto; }
@@ -113,7 +113,7 @@ input[type=text], textarea {
   background-color: #FFF8E9;
   border: none;
   padding: 5px;
-  font-family: "Raleway";
+  font-family: "Libre Franklin";
   width: 80vw;
   max-width: 400px; }
 
@@ -128,7 +128,7 @@ input[type=submit] {
   background-color: #62AAFA;
   border: none;
   color: #FFFFFF;
-  font-family: "Raleway";
+  font-family: "Libre Franklin";
   font-size: 16px;
   padding: 15px 50px;
   display: block;
@@ -142,7 +142,7 @@ form > .row {
 
 /*General Styling*/
 html, body {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Libre Franklin", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
@@ -167,7 +167,7 @@ button {
   background-color: #62AAFA;
   border: none;
   color: #FFFFFF;
-  font-family: "Raleway";
+  font-family: "Libre Franklin";
   font-size: 16px;
   padding: 15px 50px; }
 
