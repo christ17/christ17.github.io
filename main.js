@@ -1,20 +1,18 @@
 $(document).ready(function(){
-  var collapsed = true;
-  $("#menu").click(function(){
-    if(collapsed == true){
-      $("#menu-collapse").css("display", "block");
-      $("#menu > span").attr('class', 'fa fa-close');
-      collapsed = false;
-    }
-    else {
-      $("#menu-collapse").css("display", "none");
-      $("#menu > span").attr('class', 'fa fa-bars');
-      collapsed = true;
-    }
+  $('#diseases-dropdown').click(function(){
+    menuResolveConflict('diseases','about');
   });
-  $("nav > ul > li > a").click(function(){
-    $("#menu-collapse").css("display", "none");
-    $("#menu > span").attr('class', 'fa fa-bars');
-    collapsed = true;
+  $('#about-dropdown').click(function(){
+    menuResolveConflict('about','diseases');
   });
+  function menuResolveConflict(id1, id2) {
+    $('#'+id1+'-dropdown').toggleClass('active-menu');
+    if($('#'+id2+'-dropdown').hasClass('active-menu')){
+      $('#'+id2+'-dropdown').removeClass('active-menu');
+    }
+    $('#'+id1+'-menu').toggleClass('display');
+    if($('#'+id2+'-menu').hasClass('display')){
+      $('#'+id2+'-menu').removeClass('display');
+    }
+  }
 });

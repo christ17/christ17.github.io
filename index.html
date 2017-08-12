@@ -6,96 +6,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project AmaRNA- Home</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="main.js"></script>
 </head>
 <body>
-  <div class="header">
-    <div id="navigation-menu">
-      <button id="menu">
-        <span class="fa fa-bars"></span>
-      </button>
-      <div id="menu-collapse">
-        <div class="content">
-          <h3>Site</h3>
-          <hr>
-          <nav id="site-navigation">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="explore.html">Explore</a></li>
-              <li><a href="diseases.html">Diseases</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <h3>This Page</h3>
-          <hr>
-          <nav id="page-navigation">
-            <ul>
-              <li><a href="#welcome">Welcome</a></li>
-              <li><a href="#explore">Explore</a></li>
-              <li><a href="#learn">Learn</a></li>
-              <li><a href="#meet">Meet</a></li>
-              <li><a href="#connect">Connect</a></li>
-            </ul>
-          </nav>
-          <h3>References</h3>
-          <hr>
-          <nav id="references">
-            <ul>
-              <li><a href="biology.html">General Biology</a></li>
-              <li><a href="glossary.html">Glossary</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="body">
-    <div class="fullpage" id="welcome">
-      <div class="container-fluid">
+  <div id="top-nav">
+    <nav>
+      <div class="container-fluid" id="navbar">
         <div class="row">
-          <div class="col-sm-7 offset-sm-1">
-            <h1 id="title">Project AmaRNA</h1>
-            <hr>
-            <p>Here at Project AmaRNA, we strive to help patients by making information about medicine and about health conditions accessible and easy to understand. We want to make healthcare feel more comfortable for people by helping them to understand what is happening to their bodies and how medicine works.</p>
+          <div class="col">
+            <a id="diseases-dropdown">Diseases
+              <svg>
+                <polygon points="0,3 12,3 6,9"/>
+              </svg>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="index.html" id="logo">
+              <img src="images/heart+rna.png">
+            </a>
+          </div>
+          <div class="col">
+            <a id="about-dropdown">About
+              <svg>
+                <polygon points="0,3 12,3 6,9"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="fullpage alternate" id="explore">
-      <div class="content">
-        <h1>Explore our content</h1>
-        <hr>
-        <p>Read articles on the latest research on diseases and treatments, authored by our very own medical students.</p>
-        <a href="explore.html"><button>Explore</button></a>
+      <div id="diseases-menu">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <a class="menu-button">
+                <img src="images/index.png">
+              </a>
+              <h5>Index</h5>
+              <p class="hidden-md-down">Browse the alphabetized list of diseases we have information about, along with a short description of each.</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a class="menu-button">
+                <img src="images/research.png">
+              </a>
+              <h5>Research</h5>
+              <p class="hidden-md-down">Learn about the latest research our pre-med students are currently exploring and/or conducting.</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a class="menu-button">
+                <img src="">
+              </a>
+              <h5>Glossary</h5>
+              <p class="hidden-md-down">Find the definitions of scientific terms here. We'll break down those seemingly complex terms for you to help you understand them.</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a class="menu-button">
+                <img src="images/rna.png">
+              </a>
+              <h5>Knowledge</h5>
+              <p class="hidden-md-down">Solidify the foundations of your knowledge, as our articles will build upon those.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="fullpage" id="learn">
-      <div class="content">
-        <h1>Learn about diseases</h1>
-        <hr>
-        <p>We try to make the biology involved with diseases easy to understand, yet accurate and complete.</p>
-        <a href="diseases.html"><button>Learn</button></a>
+      <div id="about-menu">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <a class="menu-button">
+                <img src="">
+              </a>
+              <h5>Our Story</h5>
+              <p class="hidden-md-down">Learn more about the origins of the name of our organization and about our purpose.</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a class="menu-button">
+                <img src="">
+              </a>
+              <h5>Our Projects</h5>
+              <p class="hidden-md-down">Find out more about the projects we're currently working on, and learn how you can help.</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a class="menu-button">
+                <img src="">
+              </a>
+              <h5>Who We Are</h5>
+              <p class="hidden-md-down">Get to know us! Meet the individuals that comprise our organization.</p>
+            </div>
+            <div class="col-6 col-lg-3">
+              <a class="menu-button">
+                <img src="">
+              </a>
+              <h5>Contact Us</h5>
+              <p class="hidden-md-down">We're human too! All of us want to help people, and we're passionate about what we do. Let us know how we can make this experience more comfortable for you.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="fullpage alternate" id="meet">
-      <div class="content">
-        <h1>Meet our team</h1>
-        <hr>
-        <p>Take a quick look inside our organization! Learn about our mission, the origins of our name, and about our team members.</p>
-        <a href="about.html"><button>Meet Us</button></a>
-      </div>
-    </div>
-    <div class="fullpage" id="connect">
-      <div class="content">
-        <h1>Connect with us</h1>
-        <hr>
-        <p>We're human too! All of us want to help people, and we're passionate about what we do. Let us know how we can make this experience more comfortable for you.</p>
-        <a href="contact.html"><button>Connect</button></a>
-      </div>
-    </div>
+    </nav>
+  </div>
+  <div id="side-nav">
+  </div>
+  <div id="welcome">
+    <h1>Project AmaRNA</h1>
   </div>
 </body>
+</html>

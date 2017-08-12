@@ -1,99 +1,121 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Libre+Franklin:300");
-#menu-collapse, nav > ul, html, body, .header, .body, .footer {
-  margin: 0px;
-  padding: 0px; }
-
-#menu-collapse, .body, .fullpage {
-  min-height: 100vh;
-  width: 100%;
-  min-width: 100%; }
-
-#menu, #menu-collapse {
-  position: fixed; }
-
-/*Navigation Menu*/
-#menu {
-  right: 0px;
-  top: 0px;
-  z-index: 3;
-  background-color: transparent;
-  border: none;
-  color: #1143B6;
-  padding: 1px 10px;
-  font-size: 1.5em; }
-
-@media screen and (min-width: 760px) {
-  #menu {
-    font-size: 2em; } }
-#menu-collapse {
-  min-width: 0px;
-  max-width: 420px;
-  right: 0px;
-  z-index: 2;
-  display: none;
-  overflow-x: hidden;
-  background-color: #082568;
-  opacity: .975;
-  font-family: "Libre Franklin"; }
-  #menu-collapse h3 {
-    font-size: 1.3em;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    color: white; }
-  #menu-collapse hr {
-    float: left;
-    clear: both;
-    display: block;
-    width: 15px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: white;
-    margin: 8px 0px 20px 0px; }
-
-nav > ul {
-  list-style-type: none; }
-  nav > ul > li {
-    display: block;
-    clear: both;
-    padding: 3.5px 0px;
-    font-family: "Montserrat";
-    font-size: 16px; }
-    nav > ul > li > a {
-      color: #FFAA00;
-      text-decoration: none; }
-    nav > ul > li > a:hover {
-      color: #FFAA00;
-      text-decoration: underline; }
-
+/*@import "sass/helpers/control";*/
 #welcome {
-  text-align: left;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("images/logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center; }
-  #welcome hr {
-    display: block;
-    clear: both;
-    float: left;
-    width: 67%; }
-  #welcome p {
-    clear: both;
-    font-family: "Libre Franklin"; }
-    @media screen and (min-width: 760px) {
-      #welcome p {
-        font-size: 2.5vh; } }
+  width: 100%;
+  height: 100%;
+  min-height: 100vh; }
 
-#title {
-  color: black;
-  font-size: 12.5vw;
-  margin: 0px;
-  margin-bottom: 24px;
-  padding-top: 35vh; }
-  @media screen and (orientation: landscape) {
-    #title {
-      font-size: 6vw;
-      padding-top: 40vh; } }
+#navbar {
+  position: fixed;
+  top: 0px;
+  text-align: center;
+  background-color: #F9F9F9;
+  height: 70px;
+  width: 100%;
+  font-size: 16px;
+  z-index: 999; }
+  #navbar svg {
+    width: 12px;
+    height: 12px; }
+  #navbar polygon {
+    fill: #555; }
+  #navbar .col {
+    padding: 0px; }
+    #navbar .col a {
+      display: inline-block;
+      height: 70px;
+      width: 100%;
+      max-width: 200px;
+      padding-top: 20px;
+      color: #777; }
+    #navbar .col a:hover {
+      color: #007EA7;
+      text-decoration: underline;
+      cursor: pointer; }
+      #navbar .col a:hover polygon {
+        fill: #007EA7; }
 
+#logo {
+  display: inline-block;
+  height: 70px; }
+  #logo img {
+    height: 60px;
+    margin: 5px 15px;
+    border-radius: 100%;
+    opacity: 0.75; }
+
+#logo:hover img {
+  opacity: 1; }
+
+#diseases-menu, #about-menu {
+  display: none;
+  position: fixed;
+  background-color: white;
+  top: 70px;
+  width: 100%;
+  box-shadow: 2px 2px 2px #AAA; }
+  #diseases-menu h5, #about-menu h5 {
+    color: #30BCED;
+    text-align: center;
+    margin-top: 1vh;
+    width: 100%; }
+  #diseases-menu p, #about-menu p {
+    color: #003459;
+    width: 100%;
+    margin: 0; }
+
+#about-menu .menu-button {
+  background-color: #F9A03F; }
+
+.display {
+  display: block !important; }
+
+.active-menu {
+  border-left: 1px #CCC solid;
+  border-right: 1px #CCC solid;
+  background-color: white; }
+
+.col-6.col-lg-3 {
+  padding: 5vw; }
+
+.menu-button {
+  text-align: center;
+  display: inline-block;
+  font-family: "Montserrat";
+  background-color: #007EA7;
+  width: 40vw;
+  height: 40vw;
+  box-shadow: 3px 3px 3px #AAA;
+  cursor: pointer; }
+  .menu-button > img {
+    display: inline-block;
+    margin-top: 26%;
+    width: 80%;
+    height: 48%; }
+
+@media screen and (min-width: 993px) {
+  .menu-button {
+    width: 15vw;
+    height: 15vw; }
+
+  h4 {
+    margin-top: 4vh; } }
+#welcome {
+  -webkit-background: linear-gradient(-45deg, #F9A03F, #007EA7);
+  -moz-background: linear-gradient(-45deg, #F9A03F, #007EA7);
+  -ms-background: linear-gradient(-45deg, #F9A03F, #007EA7);
+  -o-background: linear-gradient(-45deg, #F9A03F, #007EA7);
+  background: linear-gradient(-45deg, #F9A03F, #007EA7); }
+  #welcome h1 {
+    font-size: 15vw;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding-top: 40vh; }
+
+@media screen and (min-width: 993px) and (min-aspect-ratio: 1 / 1) {
+  #welcome h1 {
+    font-size: 7.5vw; } }
 .container h4 {
   padding: 5.5px 0px; }
 
@@ -119,13 +141,13 @@ input[type=text], textarea {
 
 input:focus, textarea:focus {
   outline: none;
-  border: 1.5px solid #FFAA00; }
+  border: 1.5px solid #F9A03F; }
 
 textarea {
   height: 200px; }
 
 input[type=submit] {
-  background-color: #62AAFA;
+  background-color: #30BCED;
   border: none;
   color: #FFFFFF;
   font-family: "Libre Franklin";
@@ -140,59 +162,11 @@ input[type=submit] {
 form > .row {
   padding: 10px 0px; }
 
-/*General Styling*/
 html, body {
   font-family: "Libre Franklin", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat";
   font-weight: normal; }
-
-h1 {
-  color: #082568;
-  font-size: 1.75em;
-  margin-bottom: 24px; }
-  @media screen and (min-width: 760px) {
-    h1 {
-      font-size: 2.25em; } }
-
-hr {
-  border: #FFAA00 solid 2px;
-  width: 40%;
-  margin: auto;
-  margin-top: -16px;
-  margin-bottom: 24px; }
-
-button {
-  background-color: #62AAFA;
-  border: none;
-  color: #FFFFFF;
-  font-family: "Libre Franklin";
-  font-size: 16px;
-  padding: 15px 50px; }
-
-button:focus {
-  outline: 0; }
-
-.header, .body, .footer {
-  width: 100%;
-  display: block; }
-
-.fullpage {
-  text-align: center; }
-
-.content {
-  width: 100%;
-  padding: 5% 10%; }
-
-.alternate {
-  background-color: #F0E9DA; }
-
-#page-title {
-  color: black;
-  font-size: 10vw; }
-  @media screen and (orientation: landscape) {
-    #page-title {
-      font-size: 6vw; } }
 
 /*# sourceMappingURL=main.css.map */
