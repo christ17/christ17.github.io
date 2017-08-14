@@ -93,12 +93,19 @@
     width: 80%;
     height: 48%; }
 
+@media screen and (max-width: 993px) and (orientation: landscape) {
+  #diseases-menu, #about-menu {
+    height: 100vw;
+    max-height: 100vh;
+    padding-bottom: 5vw;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; } }
 @media screen and (min-width: 993px) {
   .menu-button {
     width: 15vw;
     height: 15vw; }
 
-  h4 {
+  h5 {
     margin-top: 4vh; } }
 #welcome {
   -webkit-background: linear-gradient(-45deg, #F9A03F, #007EA7);
