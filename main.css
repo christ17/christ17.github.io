@@ -1,179 +1,96 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat|Libre+Franklin:300");
-/*@import "sass/helpers/control";*/
-#welcome {
-  width: 100%;
-  height: 100%;
-  min-height: 100vh; }
-
-#navbar {
-  position: fixed;
-  top: 0px;
-  text-align: center;
-  background-color: #F9F9F9;
-  height: 70px;
-  width: 100%;
-  font-size: 16px;
-  z-index: 999; }
-  #navbar svg {
-    width: 12px;
-    height: 12px; }
-  #navbar polygon {
-    fill: #555; }
-  #navbar .col {
-    padding: 0px; }
-    #navbar .col a {
-      display: inline-block;
-      height: 70px;
-      width: 100%;
-      max-width: 200px;
-      padding-top: 20px;
-      color: #777; }
-    #navbar .col a:hover {
-      color: #007EA7;
-      text-decoration: underline;
-      cursor: pointer; }
-      #navbar .col a:hover polygon {
-        fill: #007EA7; }
-
-#logo {
-  display: inline-block;
-  height: 70px; }
-  #logo img {
-    height: 60px;
-    margin: 5px 15px;
-    border-radius: 100%;
-    opacity: 0.75; }
-
-#logo:hover img {
-  opacity: 1; }
-
-#diseases-menu, #about-menu {
-  display: none;
-  position: fixed;
-  background-color: white;
-  top: 70px;
-  width: 100%;
-  box-shadow: 2px 2px 2px #AAA; }
-  #diseases-menu h5, #about-menu h5 {
-    color: #30BCED;
-    text-align: center;
-    margin-top: 1vh;
-    width: 100%; }
-  #diseases-menu p, #about-menu p {
-    color: #003459;
-    width: 100%;
-    margin: 0; }
-
-#about-menu .menu-button {
-  background-color: #F9A03F; }
-
-.display {
-  display: block !important; }
-
-.active-menu {
-  border-left: 1px #CCC solid;
-  border-right: 1px #CCC solid;
-  background-color: white; }
-
-.col-6.col-lg-3 {
-  padding: 5vw; }
-
-.menu-button {
-  text-align: center;
-  display: inline-block;
-  font-family: "Montserrat";
-  background-color: #007EA7;
-  width: 40vw;
-  height: 40vw;
-  box-shadow: 3px 3px 3px #AAA;
-  cursor: pointer; }
-  .menu-button > img {
-    display: inline-block;
-    margin-top: 26%;
-    width: 80%;
-    height: 48%; }
-
-@media screen and (max-width: 993px) and (orientation: landscape) {
-  #diseases-menu, #about-menu {
-    height: 100vw;
-    max-height: 100vh;
-    padding-bottom: 5vw;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch; } }
-@media screen and (min-width: 993px) {
-  .menu-button {
-    width: 15vw;
-    height: 15vw; }
-
-  h5 {
-    margin-top: 4vh; } }
-#welcome {
-  -webkit-background: linear-gradient(-45deg, #F9A03F, #007EA7);
-  -moz-background: linear-gradient(-45deg, #F9A03F, #007EA7);
-  -ms-background: linear-gradient(-45deg, #F9A03F, #007EA7);
-  -o-background: linear-gradient(-45deg, #F9A03F, #007EA7);
-  background: linear-gradient(-45deg, #F9A03F, #007EA7); }
-  #welcome h1 {
-    font-size: 15vw;
-    color: white;
-    margin: 0px;
-    text-align: center;
-    padding-top: 40vh; }
-
-@media screen and (min-width: 993px) and (min-aspect-ratio: 1 / 1) {
-  #welcome h1 {
-    font-size: 7.5vw; } }
-.container h4 {
-  padding: 5.5px 0px; }
-
-.container h5 {
-  font-family: "Libre Franklin"; }
-
-.container hr {
-  margin: 7.5vh auto; }
-
-.container span {
-  font-size: 1.5rem;
-  font-family: "Montserrat";
-  color: #EE0000;
-  vertical-align: 0px; }
-
-input[type=text], textarea {
-  background-color: #FFF8E9;
-  border: none;
-  padding: 5px;
-  font-family: "Libre Franklin";
-  width: 80vw;
-  max-width: 400px; }
-
-input:focus, textarea:focus {
-  outline: none;
-  border: 1.5px solid #F9A03F; }
-
-textarea {
-  height: 200px; }
-
-input[type=submit] {
-  background-color: #30BCED;
-  border: none;
-  color: #FFFFFF;
-  font-family: "Libre Franklin";
-  font-size: 16px;
-  padding: 15px 50px;
-  display: block;
-  margin: 7.5vh auto; }
-
-input[type=submit] {
-  outline: 0; }
-
-form > .row {
-  padding: 10px 0px; }
-
 html, body {
-  font-family: "Libre Franklin", sans-serif; }
+  text-align: justify;
+  font-family: "Khula";
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+}
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat";
-  font-weight: normal; }
+@media screen and (min-width: 760px) {
+  body {
+    font-size: 24px;
+  }
+}
 
-/*# sourceMappingURL=main.css.map */
+div {
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+}
+
+#header {
+  width: 100%;
+  max-width: none;
+  margin: 0px;
+  padding: 15vh 0px 25vh 0px;
+  background-color: #3A86FF;
+}
+
+.title {
+  color: white;
+  margin-bottom: 2.5vh;
+}
+
+.subtitle {
+  color: white;
+  font-size: 1.1em;
+}
+
+h1 {
+  font-family: "Cabin";
+}
+
+h1, h2 {
+  text-align: center;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 1.25em;
+  color: #666;
+  margin-top: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Cabin";
+  color: #A5C8FF;
+}
+
+#profilepic {
+  position: relative;
+  top: -20vh;
+  display: block;
+  margin: auto;
+  margin-bottom: -15vh;
+  text-align: center;
+  max-width: 300px;
+  width: 75%;
+  border-radius: 50%;
+  border: 7.5px solid #A5C8FF;
+  background-color: #A5C8FF;
+  opacity: 1;
+}
+
+#bayarea {
+  display: block;
+  width: 75%;
+  margin: auto;
+  opacity: 1;
+}
+
+img {
+  display: block;
+  width: 40%;
+  margin: auto;
+  padding: 15px;
+}
+
+@media screen and (min-width: 1201px) {
+  img {
+    opacity: .5;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
