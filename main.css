@@ -1,96 +1,20 @@
+/*General Style*/
+/*Global variables*/
 html, body {
-  text-align: justify;
-  font-family: "Khula";
-  font-size: 16px;
-  padding: 0px;
-  margin: 0px;
-}
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 300; }
 
-@media screen and (min-width: 760px) {
-  body {
-    font-size: 24px;
-  }
-}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  font-weight: 400; }
 
-div {
-  max-width: 800px;
-  margin: auto;
-  padding: 15px;
-}
+body {
+  display: grid;
+  /*grid-template-columns: ;
+  grid-template-rows: ;
+  grid-template-areas: ;*/ }
 
-#header {
-  width: 100%;
-  max-width: none;
-  margin: 0px;
-  padding: 15vh 0px 25vh 0px;
-  background-color: #3A86FF;
-}
+#navbar {
+  grid-area: navbar; }
 
-.title {
-  color: white;
-  margin-bottom: 2.5vh;
-}
-
-.subtitle {
-  color: white;
-  font-size: 1.1em;
-}
-
-h1 {
-  font-family: "Cabin";
-}
-
-h1, h2 {
-  text-align: center;
-  margin: 0px;
-}
-
-h2 {
-  font-size: 1.25em;
-  color: #666;
-  margin-top: 15px;
-}
-
-a {
-  text-decoration: none;
-  font-family: "Cabin";
-  color: #A5C8FF;
-}
-
-#profilepic {
-  position: relative;
-  top: -20vh;
-  display: block;
-  margin: auto;
-  margin-bottom: -15vh;
-  text-align: center;
-  max-width: 300px;
-  width: 75%;
-  border-radius: 50%;
-  border: 7.5px solid #A5C8FF;
-  background-color: #A5C8FF;
-  opacity: 1;
-}
-
-#bayarea {
-  display: block;
-  width: 75%;
-  margin: auto;
-  opacity: 1;
-}
-
-img {
-  display: block;
-  width: 40%;
-  margin: auto;
-  padding: 15px;
-}
-
-@media screen and (min-width: 1201px) {
-  img {
-    opacity: .5;
-  }
-  img:hover {
-    opacity: 1;
-  }
-}
+/*# sourceMappingURL=main.css.map */
