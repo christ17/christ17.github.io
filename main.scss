@@ -1,0 +1,26 @@
+/*General Style*/
+@import "sass/variables";
+
+html, body {
+  font: {
+    family: $body-font;
+    weight: 300;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font: {
+    family: $primary-font;
+    weight: 400;
+  }
+}
+
+body {
+  display: grid;
+  /*grid-template-columns: ;
+  grid-template-rows: ;
+  grid-template-areas: ;*/
+}
+
+#navbar {
+  grid-area: navbar;
+}

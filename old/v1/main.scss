@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Libre+Franklin:300');
+@import "sass/helpers/mixins";
+@import "sass/helpers/placeholders";
+@import "sass/helpers/variables";
+@import "sass/features/navigation";
+@import "sass/page-specific/index";
+@import "sass/page-specific/contact";
+
+/*General Styling*/
+html, body {
+  @extend %no-formatting;
+  font-family: $secondary-font, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font: {
+    family: $primary-font;
+    weight: normal;
+  }
+}
+h1 {
+  color: $theme-navy;
+  font-size: 1.75em;
+  margin-bottom: 24px;
+  @media screen and (min-width: $tablet) {
+    font-size: 2.25em;
+  }
+}
+hr {
+  border: $theme-orange solid 2px;
+  width: 40%;
+  margin: auto;
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+button {
+  background-color: $theme-sky;
+  border: none;
+  color: #FFFFFF;
+  font:{
+    family: $secondary-font;
+    size: 16px;
+  }
+  padding: 15px 50px;
+}
+button:focus {
+  outline: 0;
+}
+.header, .body, .footer {
+  @extend %no-formatting;
+  width: 100%;
+  display: block;
+}
+.body {
+  @extend %fill-screen;
+}
+.fullpage {
+  @extend %fill-screen;
+  text-align: center;
+}
+.content {
+  width: 100%;
+  padding: 5% 10%;
+}
+.alternate {
+  background-color: $alternate-bg-color;
+}
+#page-title {
+  color: black;
+  font-size: 10vw;
+  @media screen and (orientation: landscape) {
+    font-size: 6vw;
+  }
+}

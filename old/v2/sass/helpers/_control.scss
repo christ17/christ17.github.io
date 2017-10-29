@@ -1,0 +1,5 @@
+/each $person in $cofounders {
+  .#{$person}-pic {
+    background: url('images/#{$person}.png');
+  }
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Libre+Franklin:300');
+@import "sass/helpers/variables";
+/*@import "sass/helpers/control";*/
+@import "sass/helpers/mixins";
+@import "sass/helpers/placeholders";
+@import "sass/features/navigation";
+@import "sass/page-specific/index";
+@import "sass/page-specific/contact";
+
+html, body {
+  font-family: $secondary-font, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font: {
+    family: $primary-font;
+    weight: normal;
+  }
+}

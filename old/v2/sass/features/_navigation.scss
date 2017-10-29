@@ -1,0 +1,111 @@
+#navbar {
+  position: fixed;
+  top: 0px;
+  text-align: center;
+  background-color: #f3f0f0;
+  height: 70px;
+  width: 100%;
+  font-size: 16px;
+  z-index: 999;
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+  polygon {
+    fill: #605a5a;
+  }
+  .col, {
+    padding: 0px;
+    a {
+      display: inline-block;
+      height: 70px;
+      width: 100%;
+      max-width: 200px;
+      padding-top: 20px;
+      color: #605a5a;
+    }
+    a:hover {
+      color: $theme-blue;
+      text-decoration: none;
+      cursor: pointer;
+      polygon {
+        fill: $theme-blue;
+      }
+    }
+  }
+}
+#logo {
+  display: inline-block;
+  height: 70px;
+  img {
+    height: 60px;
+    margin: 5px 15px;
+    opacity: 1;
+  }
+}
+#logo:hover {
+  img {
+    opacity: 0.75;
+  }
+}
+#diseases-menu, #about-menu {
+  display: none;
+  position: fixed;
+  background-color: white;
+  top: 70px;
+  width: 100%;
+  box-shadow: 2px 2px 2px #AAA;
+  h5 {
+    font-size: 2.5vh;
+    color: #aaa;
+    text-align: center;
+    margin-top: 1vh;
+    width: 100%;
+  }
+  p {
+    font-size: 16px;
+    color: #555;
+    width: 100%;
+    margin: 0;
+  }
+}
+#about-menu {
+  .menu-button {
+    background-color: $theme-orange;
+  }
+}
+.display {
+  display: block !important;
+}
+.active-menu {
+  border-left: 1px #CCC solid;
+  border-right: 1px #CCC solid;
+  background-color: white;
+}
+.col-lg-3 {
+  padding: 2.5%;
+}
+.menu-button {
+  text-align: center;
+  display: inline-block;
+  font-family: $primary-font;
+  background-color: $theme-blue;
+  width: 90%;
+  height: auto;
+  box-shadow: 3px 3px 3px #AAA;
+  cursor: pointer;
+  > img {
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+  }
+}
+@media screen and (max-width: $md) {
+  #diseases-menu, #about-menu{
+    max-height: 95vh;
+    padding-bottom: 10vw;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+  }
+}
