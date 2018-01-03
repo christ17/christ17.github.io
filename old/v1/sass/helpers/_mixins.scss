@@ -1,5 +1,0 @@
-@mixin browser-compatibility($selector, $property) {
-  -webkit-#{$selector}: $property;
-  -moz-#{$selector}: $property;
-  -ms-#{$selector}: $property;
-}

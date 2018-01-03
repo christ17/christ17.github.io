@@ -1,20 +1,1233 @@
-/*General Style*/
-/*Global variables*/
-html, body {
-  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
-  font-weight: 300; }
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400");
+@font-face {
+  font-family: 'League Spartan';
+  src: url("media/fonts/leaguespartan.otf"); }
+/* Color Palette */
+html, body, div, p, h1, h2, h3, h4, h5, h6, #navbar ul, .footer-section .socialmedia, .footer-nav ul, .sam, .sravya, .alvin, .jerry, .julie, .neha, .praneeth, .will, .amira, .basil, .sofia, .chris {
+  padding: 0px;
+  margin: 0px; }
+
+div {
+  box-sizing: border-box; }
+
+.header-section, .team-header-section, .getinvolved-header-section, .donate-header-section, .index-header-section {
+  height: auto;
+  min-height: 100vh;
+  width: auto;
+  min-width: 100vw; }
+
+html, body, div, p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px; }
+  @media screen and (min-width: 760px) {
+    html, body, div, p {
+      font-size: 20px; } }
+  @media screen and (min-width: 1200px) {
+    html, body, div, p {
+      font-size: 24px; } }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
-  font-weight: 400; }
+  font-family: "League Spartan", sans-serif; }
 
-body {
-  display: grid;
-  /*grid-template-columns: ;
-  grid-template-rows: ;
-  grid-template-areas: ;*/ }
+a {
+  color: black;
+  text-decoration: none; }
+
+a:hover {
+  color: #6393ce; }
+
+button:focus {
+  outline: 0; }
 
 #navbar {
-  grid-area: navbar; }
+  position: relative;
+  top: 0px;
+  background-color: #F2F1EF;
+  height: 100px;
+  width: 100%;
+  padding: 25px 12.5px;
+  z-index: 101; }
+  #navbar .container {
+    height: 100%;
+    text-align: right; }
+    #navbar .container > a {
+      display: inline-block;
+      width: auto;
+      height: 100%;
+      padding: 0px 12.5px 25px 12.5px;
+      font-size: 30px;
+      color: #6393ce; }
+    #navbar .container > a:first-child {
+      float: left; }
+  #navbar img {
+    max-height: 100%; }
+  @media screen and (max-width: 1023px) {
+    #navbar nav {
+      display: none; } }
+  @media screen and (min-width: 1024px) {
+    #navbar nav {
+      display: inline-block; } }
+  #navbar ul {
+    list-style-type: none;
+    text-align: center; }
+    @media screen and (max-width: 1023px) {
+      #navbar ul li {
+        display: block;
+        padding: 10px 0px; } }
+    @media screen and (min-width: 1024px) {
+      #navbar ul li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px 1vw; } }
+
+@media screen and (min-width: 1024px) {
+  #menu-button {
+    display: none !important; } }
+
+@media screen and (max-width: 1024px) {
+  #opportunities-dropdown {
+    display: none !important; } }
+@media screen and (min-width: 1024px) {
+  #opportunities-dropdown {
+    display: inline-block !important; } }
+
+#opportunities-menu {
+  padding: 2.5vh 0px; }
+  #opportunities-menu a {
+    display: block;
+    float: left;
+    box-sizing: border-box; }
+    #opportunities-menu a i {
+      display: block;
+      background-color: #6393ce;
+      color: white; }
+  #opportunities-menu a:hover {
+    color: #6393ce; }
+  #opportunities-menu a:hover > i {
+    background-color: #4675b8; }
+  @media screen and (max-width: 1024px) {
+    #opportunities-menu a {
+      padding: 2.5vh 7.5px !important;
+      font-size: 12px; }
+      #opportunities-menu a i {
+        padding: 3.5vh 15px;
+        margin: 0px auto 1.5vh auto;
+        width: calc(100% - 40px);
+        border-radius: 7.5px;
+        font-size: 40px; } }
+  @media screen and (min-width: 1024px) {
+    #opportunities-menu {
+      display: none;
+      background-color: #4b4b4b;
+      position: absolute;
+      width: 100vw;
+      top: 100px;
+      right: 0px;
+      padding: calc(1vh + 1vw) 0px; }
+      #opportunities-menu .column-wrapper, #opportunities-menu .footer-nav-wrapper {
+        margin: 0px -1.5px;
+        display: inline-block;
+        width: 40%; }
+      #opportunities-menu a {
+        font-size: 1vw;
+        color: white; }
+        #opportunities-menu a i {
+          font-size: 5vw;
+          width: calc(100% - 5vw);
+          margin: auto;
+          padding: 2vw;
+          border-radius: .5vw;
+          margin-bottom: calc(1vh + 1vw); } }
+
+.navbar-margin {
+  margin-top: 100px; }
+
+.display-menu {
+  display: block !important;
+  height: calc(100vh - 100px);
+  background-color: #F2F1EF;
+  margin: 0px -12.5px !important;
+  padding: 0px 15px;
+  overflow-y: scroll; }
+
+.header-section, .team-header-section, .getinvolved-header-section, .donate-header-section, .index-header-section {
+  color: white;
+  padding-top: 37.5vh;
+  position: relative; }
+  @media screen and (min-width: 760px) {
+    .header-section, .team-header-section, .getinvolved-header-section, .donate-header-section, .index-header-section {
+      padding-top: 45vh; } }
+
+@supports (display: grid) {
+  .header-section, .team-header-section, .getinvolved-header-section, .donate-header-section, .index-header-section {
+    padding-top: 0px;
+    display: grid;
+    align-content: center; } }
+.content-section, .opportunities, .mission, .picture, .no-picture, .coalition, .ambassadors, .grassroots, .representatives, .pageviews, .donation, .pledge {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 10vh 15px;
+  text-align: center;
+  background-color: white;
+  color: #4b4b4b; }
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 100%;
+  text-align: center; }
+  @media screen and (min-width: 760px) {
+    .container {
+      max-width: 90vw; } }
+  @media screen and (min-width: 1200px) {
+    .container {
+      max-width: 80vw; } }
+  .container > img {
+    margin-top: 3.5vh;
+    width: auto;
+    max-width: 80%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: cover; }
+  .container h1 {
+    font-size: calc(3vh + 3vw);
+    padding: calc(0.25 * (3vh + 3vw)); }
+    @media screen and (min-width: 760px) {
+      .container h1 {
+        padding: calc(0.25 * (2vh + 2vw));
+        font-size: calc(2vh + 2vw); } }
+  .container h2 {
+    font-size: calc(2vh + 2vw);
+    padding: calc(0.33 * (2vh + 2vw)); }
+    @media screen and (min-width: 760px) {
+      .container h2 {
+        padding: calc(0.33 * (1.25vh + 1.25vw));
+        font-size: calc(1.25vh + 1.25vw); } }
+  .container h3 {
+    font-size: calc(1.5vh + 1.5vw);
+    padding: calc(0.5 * (1.5vh + 1.5vw)); }
+    @media screen and (min-width: 760px) {
+      .container h3 {
+        padding: calc(0.5 * (1vh + 1vw));
+        font-size: calc(1vh + 1vw); } }
+
+.scroll-arrow {
+  font-size: 50px;
+  color: inherit;
+  position: absolute;
+  bottom: 5vh; }
+
+.column-wrapper, .footer-nav-wrapper {
+  width: 100%;
+  overflow: hidden; }
+  .column-wrapper > div, .footer-nav-wrapper > div {
+    float: left; }
+
+.n-cols-2, .footer-nav {
+  padding: 15px;
+  width: 50% !important; }
+
+.n-cols-3, #opportunities-menu a {
+  padding: 15px;
+  width: 33.3333333333% !important; }
+
+.n-cols-2-tablet, .tenet {
+  padding: 15px;
+  width: 100%; }
+  @media screen and (min-width: 760px) {
+    .n-cols-2-tablet, .tenet {
+      width: 50% !important; } }
+
+.n-cols-3-tablet, .opportunity-icon, .member {
+  padding: 15px;
+  width: 100%; }
+  @media screen and (min-width: 760px) {
+    .n-cols-3-tablet, .opportunity-icon, .member {
+      width: 33.3333333333% !important; } }
+
+.n-cols-6-tablet {
+  padding: 15px;
+  width: 100%; }
+  @media screen and (min-width: 760px) {
+    .n-cols-6-tablet {
+      width: 16.6666666667% !important; } }
+
+.footer-section {
+  padding: 5vh 15px;
+  background-color: #4b4b4b; }
+
+.team-header-section {
+  background-image: url("media/backgrounds/team.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.getinvolved-header-section {
+  background-image: url("media/backgrounds/getinvolved.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.donate-header-section {
+  background-image: url("media/backgrounds/donate.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.opportunities {
+  background: white;
+  color: #737373; }
+  .opportunities h1, .opportunities h2, .opportunities h3, .opportunities h4, .opportunities h5, .opportunities h6 {
+    color: #4b4b4b; }
+
+.mission {
+  background: white;
+  color: white; }
+  .mission h1, .mission h2, .mission h3, .mission h4, .mission h5, .mission h6 {
+    color: white; }
+
+.picture {
+  background: white;
+  color: #4b4b4b; }
+  .picture h1, .picture h2, .picture h3, .picture h4, .picture h5, .picture h6 {
+    color: #4b4b4b; }
+
+.no-picture {
+  background: white;
+  color: #4b4b4b; }
+  .no-picture h1, .no-picture h2, .no-picture h3, .no-picture h4, .no-picture h5, .no-picture h6 {
+    color: #4b4b4b; }
+
+.coalition {
+  background: white;
+  color: #737373; }
+  .coalition h1, .coalition h2, .coalition h3, .coalition h4, .coalition h5, .coalition h6 {
+    color: #4b4b4b; }
+
+.ambassadors {
+  background: #6393ce;
+  color: white; }
+  .ambassadors h1, .ambassadors h2, .ambassadors h3, .ambassadors h4, .ambassadors h5, .ambassadors h6 {
+    color: white; }
+
+.grassroots {
+  background: #66cc99;
+  color: white; }
+  .grassroots h1, .grassroots h2, .grassroots h3, .grassroots h4, .grassroots h5, .grassroots h6 {
+    color: white; }
+
+.representatives {
+  background: white;
+  color: #737373; }
+  .representatives h1, .representatives h2, .representatives h3, .representatives h4, .representatives h5, .representatives h6 {
+    color: #4b4b4b; }
+
+.pageviews {
+  background: #4b4b4b;
+  color: white; }
+  .pageviews h1, .pageviews h2, .pageviews h3, .pageviews h4, .pageviews h5, .pageviews h6 {
+    color: white; }
+
+.donation {
+  background: #6393ce;
+  color: white; }
+  .donation h1, .donation h2, .donation h3, .donation h4, .donation h5, .donation h6 {
+    color: white; }
+
+.pledge {
+  background: white;
+  color: #737373; }
+  .pledge h1, .pledge h2, .pledge h3, .pledge h4, .pledge h5, .pledge h6 {
+    color: #4b4b4b; }
+
+.awards-menu-icon {
+  color: white; }
+
+.flyins-menu-icon {
+  color: white; }
+
+.internships-menu-icon {
+  color: white; }
+
+.scholarships-menu-icon {
+  color: white; }
+
+.studyabroad-menu-icon {
+  color: white; }
+
+.summerprograms-menu-icon {
+  color: white; }
+
+.footer-section {
+  color: #aaa; }
+  .footer-section a {
+    color: white; }
+  .footer-section .socialmedia {
+    list-style-type: none; }
+    .footer-section .socialmedia a {
+      cursor: inherit; }
+    .footer-section .socialmedia a *:hover {
+      color: #6393ce;
+      cursor: pointer; }
+    .footer-section .socialmedia li {
+      display: inline-block;
+      height: 10vh;
+      padding: 0px 1vh;
+      font-size: 5vh; }
+      .footer-section .socialmedia li i {
+        position: relative;
+        bottom: 33%; }
+      .footer-section .socialmedia li img {
+        height: 100%; }
+  .footer-section p {
+    font-size: 12px; }
+    @media screen and (min-width: 760px) {
+      .footer-section p {
+        font-size: 20px; } }
+
+.footer-nav-wrapper {
+  margin: -2.5vh auto 2.5vh auto; }
+  @media screen and (min-width: 760px) {
+    .footer-nav-wrapper {
+      width: 50%;
+      max-width: 500px; } }
+
+.footer-nav {
+  text-align: left;
+  box-sizing: border-box;
+  float: left;
+  font-size: 12px; }
+  @media screen and (min-width: 760px) {
+    .footer-nav {
+      font-size: 20px; } }
+  .footer-nav ul {
+    list-style-type: none; }
+    .footer-nav ul > li {
+      font-weight: bold;
+      letter-spacing: 0.5px; }
+  .footer-nav a:hover {
+    color: #6393ce; }
+
+/* Index */
+.index-header-section > video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: 10;
+  margin-top: -37.5vh; }
+  @media screen and (min-width: 760px) {
+    .index-header-section > video {
+      margin-top: -45vh; } }
+.index-header-section > .container {
+  margin: auto;
+  z-index: 11; }
+  .index-header-section > .container > img {
+    height: 10vh; }
+
+@supports (display: grid) {
+  .index-header-section > video {
+    margin-top: 0px; } }
+.opportunity-icon {
+  padding: 0px; }
+  .opportunity-icon > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box; }
+
+.opportunity-icon:hover {
+  background-color: #eee; }
+  .opportunity-icon:hover > a > div {
+    background-color: #4675b8; }
+
+.awards-icon {
+  margin: 2.5vh auto;
+  width: 50vw;
+  height: 50vw;
+  font-size: 25vw;
+  border-radius: 50%;
+  background-color: #6393ce;
+  color: white; }
+  .awards-icon > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .awards-icon > i {
+    margin-top: 12.5vw; }
+  @media screen and (min-width: 760px) {
+    .awards-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .awards-icon > i {
+        margin-top: 3.75vw; } }
+  @media screen and (min-width: 1024px) {
+    .awards-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .awards-icon > i {
+        margin-top: 3.75vw; } }
+
+.flyins-icon {
+  margin: 2.5vh auto;
+  width: 50vw;
+  height: 50vw;
+  font-size: 25vw;
+  border-radius: 50%;
+  background-color: #6393ce;
+  color: white; }
+  .flyins-icon > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .flyins-icon > i {
+    margin-top: 12.5vw; }
+  @media screen and (min-width: 760px) {
+    .flyins-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .flyins-icon > i {
+        margin-top: 3.75vw; } }
+  @media screen and (min-width: 1024px) {
+    .flyins-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .flyins-icon > i {
+        margin-top: 3.75vw; } }
+
+.internships-icon {
+  margin: 2.5vh auto;
+  width: 50vw;
+  height: 50vw;
+  font-size: 25vw;
+  border-radius: 50%;
+  background-color: #6393ce;
+  color: white; }
+  .internships-icon > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .internships-icon > i {
+    margin-top: 12.5vw; }
+  @media screen and (min-width: 760px) {
+    .internships-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .internships-icon > i {
+        margin-top: 3.75vw; } }
+  @media screen and (min-width: 1024px) {
+    .internships-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .internships-icon > i {
+        margin-top: 3.75vw; } }
+
+.scholarships-icon {
+  margin: 2.5vh auto;
+  width: 50vw;
+  height: 50vw;
+  font-size: 25vw;
+  border-radius: 50%;
+  background-color: #6393ce;
+  color: white; }
+  .scholarships-icon > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .scholarships-icon > i {
+    margin-top: 12.5vw; }
+  @media screen and (min-width: 760px) {
+    .scholarships-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .scholarships-icon > i {
+        margin-top: 3.75vw; } }
+  @media screen and (min-width: 1024px) {
+    .scholarships-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .scholarships-icon > i {
+        margin-top: 3.75vw; } }
+
+.studyabroad-icon {
+  margin: 2.5vh auto;
+  width: 50vw;
+  height: 50vw;
+  font-size: 25vw;
+  border-radius: 50%;
+  background-color: #6393ce;
+  color: white; }
+  .studyabroad-icon > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .studyabroad-icon > i {
+    margin-top: 12.5vw; }
+  @media screen and (min-width: 760px) {
+    .studyabroad-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .studyabroad-icon > i {
+        margin-top: 3.75vw; } }
+  @media screen and (min-width: 1024px) {
+    .studyabroad-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .studyabroad-icon > i {
+        margin-top: 3.75vw; } }
+
+.summerprograms-icon {
+  margin: 2.5vh auto;
+  width: 50vw;
+  height: 50vw;
+  font-size: 25vw;
+  border-radius: 50%;
+  background-color: #6393ce;
+  color: white; }
+  .summerprograms-icon > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .summerprograms-icon > i {
+    margin-top: 12.5vw; }
+  @media screen and (min-width: 760px) {
+    .summerprograms-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .summerprograms-icon > i {
+        margin-top: 3.75vw; } }
+  @media screen and (min-width: 1024px) {
+    .summerprograms-icon {
+      width: 15vw;
+      height: 15vw;
+      font-size: 7.5vw; }
+      .summerprograms-icon > i {
+        margin-top: 3.75vw; } }
+
+.mission {
+  height: calc(100vh - 100px);
+  padding: 0px; }
+
+.slide, #slide-left, #slide-right {
+  display: block;
+  position: absolute;
+  z-index: 11;
+  height: calc(100vh - 100px);
+  padding: 5vw;
+  box-sizing: border-box;
+  font-size: 50px; }
+  .slide > i, #slide-left > i, #slide-right > i {
+    position: relative;
+    top: calc(50% - 25px); }
+
+#slide-left {
+  left: 0px; }
+
+#slide-right {
+  right: 0px; }
+
+.slider, .peersoverprofit, .studentdriven, .uniqueapproach, .provencontent {
+  display: none;
+  height: 100%; }
+  .slider .container, .peersoverprofit .container, .studentdriven .container, .uniqueapproach .container, .provencontent .container {
+    height: 100%; }
+
+.peersoverprofit {
+  background-color: #6393ce; }
+
+.studentdriven {
+  background-color: #ff9942; }
+
+.uniqueapproach {
+  background-color: #2ab88e; }
+
+.provencontent {
+  background-color: #ff605d; }
+
+.peersoverprofit {
+  display: block; }
+
+.mission-graphics {
+  display: grid;
+  height: 40%;
+  align-content: center; }
+  .mission-graphics i {
+    font-size: 34vh;
+    display: block; }
+  .mission-graphics h1 {
+    font-size: 17vh;
+    margin-bottom: -5vh; }
+  .mission-graphics h2 {
+    font-size: 3.5vh; }
+
+.mission-text {
+  height: 30%; }
+  @media screen and (min-width: 760px) {
+    .mission-text h1 {
+      font-size: 5vh; }
+    .mission-text h2 {
+      font-size: 3.5vh; }
+    .mission-text p {
+      font-size: 2.5vh; } }
+  @supports not (display: grid) {
+    .mission-text {
+      padding-top: 8.5%; }
+      @media screen and (min-width: 760px) {
+        .mission-text {
+          padding-top: 5%; } } }
+  @supports (display: grid) {
+    .mission-text {
+      display: grid;
+      align-content: center; } }
+
+/* Our Team */
+.member h5 {
+  color: #6393ce; }
+.member p {
+  font-size: .65em;
+  margin-top: 2.5px; }
+
+.sam {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/sam.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .sam > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .sam > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .sam {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .sam > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .sam {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .sam > i {
+        margin-top: 5vw; } }
+
+.sam:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/sam.png");
+  background-size: cover; }
+
+.sravya {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/sravya.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .sravya > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .sravya > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .sravya {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .sravya > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .sravya {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .sravya > i {
+        margin-top: 5vw; } }
+
+.sravya:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/sravya.png");
+  background-size: cover; }
+
+.alvin {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/alvin.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .alvin > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .alvin > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .alvin {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .alvin > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .alvin {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .alvin > i {
+        margin-top: 5vw; } }
+
+.alvin:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/alvin.png");
+  background-size: cover; }
+
+.jerry {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/jerry.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .jerry > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .jerry > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .jerry {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .jerry > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .jerry {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .jerry > i {
+        margin-top: 5vw; } }
+
+.jerry:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/jerry.png");
+  background-size: cover; }
+
+.julie {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/julie.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .julie > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .julie > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .julie {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .julie > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .julie {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .julie > i {
+        margin-top: 5vw; } }
+
+.julie:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/julie.png");
+  background-size: cover; }
+
+.neha {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/neha.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .neha > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .neha > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .neha {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .neha > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .neha {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .neha > i {
+        margin-top: 5vw; } }
+
+.neha:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/neha.png");
+  background-size: cover; }
+
+.praneeth {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/praneeth.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .praneeth > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .praneeth > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .praneeth {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .praneeth > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .praneeth {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .praneeth > i {
+        margin-top: 5vw; } }
+
+.praneeth:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/praneeth.png");
+  background-size: cover; }
+
+.will {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/will.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .will > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .will > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .will {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .will > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .will {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .will > i {
+        margin-top: 5vw; } }
+
+.will:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/will.png");
+  background-size: cover; }
+
+.amira {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/amira.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .amira > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .amira > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .amira {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .amira > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .amira {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .amira > i {
+        margin-top: 5vw; } }
+
+.amira:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/amira.png");
+  background-size: cover; }
+
+.basil {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/basil.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .basil > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .basil > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .basil {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .basil > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .basil {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .basil > i {
+        margin-top: 5vw; } }
+
+.basil:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/basil.png");
+  background-size: cover; }
+
+.sofia {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/sofia.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .sofia > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .sofia > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .sofia {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .sofia > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .sofia {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .sofia > i {
+        margin-top: 5vw; } }
+
+.sofia:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/sofia.png");
+  background-size: cover; }
+
+.chris {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  background: url("media/images/team/chris.png");
+  background-size: cover;
+  border: 10px solid #eee; }
+  .chris > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .chris > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .chris {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .chris > i {
+        margin-top: 5vw; } }
+  @media screen and (min-width: 1024px) {
+    .chris {
+      width: 20vw;
+      height: 20vw;
+      font-size: 10vw; }
+      .chris > i {
+        margin-top: 5vw; } }
+
+.chris:hover {
+  background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/chris.png");
+  background-size: cover; }
+
+.divider {
+  width: calc(100% - 30px); }
+
+/* Get Involved */
+.coalition {
+  padding-bottom: 15vh; }
+
+.ambassadors {
+  padding-bottom: 15vh; }
+
+.grassroots {
+  padding-bottom: 15vh; }
+
+.getinvolved-icon, .ambassadors-icon, .grassroots-icon {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  border: 10px solid white; }
+  .getinvolved-icon > img, .ambassadors-icon > img, .grassroots-icon > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .getinvolved-icon > i, .ambassadors-icon > i, .grassroots-icon > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .getinvolved-icon, .ambassadors-icon, .grassroots-icon {
+      width: 40vh;
+      height: 40vh;
+      font-size: 20vh; }
+      .getinvolved-icon > i, .ambassadors-icon > i, .grassroots-icon > i {
+        margin-top: 10vh; } }
+  @media screen and (min-width: 1024px) {
+    .getinvolved-icon, .ambassadors-icon, .grassroots-icon {
+      width: 40vh;
+      height: 40vh;
+      font-size: 20vh; }
+      .getinvolved-icon > i, .ambassadors-icon > i, .grassroots-icon > i {
+        margin-top: 10vh; } }
+
+.ambassadors-icon {
+  background-color: #BFD7F4;
+  color: #265EA1; }
+
+.grassroots-icon {
+  background-color: #C7F4DD;
+  color: #279E62; }
+
+/* Donate */
+@supports not (display: grid) {
+  .donate-header-section {
+    padding-top: 30vh; }
+    @media screen and (min-width: 760px) {
+      .donate-header-section {
+        padding-top: 37.5vh; } } }
+.donate-header-section p {
+  margin: 5vh 0px 2.5vh 0px; }
+
+#donate-button {
+  background-color: white;
+  border: 0px;
+  border-radius: 5vh;
+  padding: 2.5vh; }
+  #donate-button > input {
+    width: 20vh; }
+
+a[href="#donate"] {
+  position: absolute;
+  top: 167vh;
+  right: -3.5vh;
+  z-index: 11;
+  transform: rotate(270deg); }
+  a[href="#donate"] > button {
+    background-color: #F2F1EF;
+    opacity: 0.9;
+    border: 0px;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+    box-shadow: 0 0 0.5vh #737373;
+    color: #6393ce;
+    font-family: 'League Spartan';
+    font-size: 2.5vh;
+    padding: 1vh; }
+
+.pledge form button {
+  background-color: white;
+  border: 0px; }
+
+.pledge form button:hover {
+  cursor: pointer; }
+
+.donate-icon {
+  margin: 2.5vh auto;
+  width: 80vw;
+  height: 80vw;
+  font-size: 40vw;
+  border-radius: 50%;
+  border: 10px solid #F2F1EF; }
+  .donate-icon > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; }
+  .donate-icon > i {
+    margin-top: 20vw; }
+  @media screen and (min-width: 760px) {
+    .donate-icon {
+      width: 40vh;
+      height: 40vh;
+      font-size: 20vh; }
+      .donate-icon > i {
+        margin-top: 10vh; } }
+  @media screen and (min-width: 1024px) {
+    .donate-icon {
+      width: 40vh;
+      height: 40vh;
+      font-size: 20vh; }
+      .donate-icon > i {
+        margin-top: 10vh; } }
+
+.tenet {
+  padding: 1.5vh 2.5vw; }
+  .tenet h2 {
+    color: #6393ce; }
 
 /*# sourceMappingURL=main.css.map */
