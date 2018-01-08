@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peerlift</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <div id="opportunity-navbar">
+    <div class="container">
+      <a href="index.html"><img src="media/logo/grayText.png"></a>
+      <a id="menu-button"><i class="fa fa-bars"></i></a>
+      <nav>
+        <ul>
+          <a id="opportunities-dropdown"><li>Opportunities <i class="fa fa-caret-down"></i></li></a>
+          <div id="opportunities-menu">
+            <div class="column-wrapper">
+              <a href="awards.html">
+                  <i class="fa fa-trophy"></i>Awards
+              </a>
+              <a href="flyins.html">
+                  <i class="fa fa-plane"></i>College Fly-Ins
+              </a>
+              <a href="internships.html">
+                  <i class="fa fa-group"></i>Internships
+              </a>
+            </div>
+            <div class="column-wrapper">
+              <a href="scholarships.html">
+                  <i class="fa fa-money"></i>Scholarships
+              </a>
+              <a href="studyabroad.html">
+                  <i class="fa fa-map"></i>Study Abroad
+              </a>
+              <a href="summerprograms.html">
+                  <i class="fa fa-university"></i>Summer Programs
+              </a>
+            </div>
+          </div>
+          <a href="#mission"><li>Mission</li></a>
+          <a href="team.html"><li>Our Team</li></a>
+          <a href="getinvolved.html"><li>Get Involved</li></a>
+          <a href="donate.html"><li>Donate</li></a>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="body">
+    <div id="filter-menu">
+      <i class="fa fa-times"></i>
+      <div class="container">
+        <h2>College Fly-Ins</h2>
+        <form>
+          <fieldset>
+            <h3>Grade:</h3>
+            <hr>
+            <input type="radio" name="grade" value="9" id="nine"><label for="nine"><h4>9</h4></label>
+            <input type="radio" name="grade" value="10" id="ten"><label for="ten"><h4>10</h4></label>
+            <input type="radio" name="grade" value="11" id="eleven"><label for="eleven"><h4>11</h4></label>
+            <input type="radio" name="grade" value="12" id="twelve"><label for="twelve"><h4>12</h4></label>
+          </fieldset>
+          <fieldset>
+            <h3>Sort By:</h3>
+            <hr>
+            <div class="column-wrapper">
+              <ul>
+                <li><label for="deadline">Deadline</label></li>
+              </ul>
+              <ul>
+                <li><input type="checkbox" name="sort" value="deadline" id="deadline"><label for="deadline"><i class="fa fa-check"></i></label></li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset>
+            <h3>Tags:</h3>
+            <hr>
+            <div class="column-wrapper">
+              <ul>
+                <li><label for="arts">Arts</label></li>
+                <li><label for="exam">Exam</label></li>
+                <li><label for="leadership">Leadership</label></li>
+                <li><label for="stem">STEM</label></li>
+              </ul>
+              <ul>
+                <li><input type="checkbox" name="tags[]" value="arts" id="arts"><label for="arts"><i class="fa fa-check"></i></label></li>
+                <li><input type="checkbox" name="tags[]" value="exam" id="exam"><label for="exam"><i class="fa fa-check"></i></label></li>
+                <li><input type="checkbox" name="tags[]" value="leadership" id="leadership"><label for="leadership"><i class="fa fa-check"></i></label></li>
+                <li><input type="checkbox" name="tags[]" value="stem" id="stem"><label for="stem"><i class="fa fa-check"></i></label></li>
+              </ul>
+            </div>
+          </fieldset>
+          <input type="submit" name="SubmitButton">
+        </form>
+      </div>
+    </div>
+    <button>Filter</button>
+    <div class="opportunity">
+      <div class="container">
+        <h2><a href="">Coca-Cola<i class="fa fa-chevron-circle-right"></i></a></h2>
+        <div class="column-wrapper">
+          <div class="grade">
+            <h3>9, 10, 11, 12</h3>
+          </div>
+          <div class="selectivity">
+            <h3>Selective</h3>
+          </div>
+          <div class="deadline">
+            <h3>January</h3>
+          </div>
+        </div>
+        <div class="info">
+          <p>The Coca-Cola Scholars Foundation supports more than 1,400 exceptional college students each year, with annual scholarships of $3.45 million awarded through 3 nationally recognized programs. 150 Coca-Cola Scholars are selected each year to receive $20,000. Winners travel on an all expenses paid trip to Atlanta, GA for Scholars Weekend, and receive access to an exceptional network and family of dedicated current and former Coca-Cola Scholars. Recipients have up to 10 years to use their scholarship funds, and may use these funds for tuition, laptop costs, study abroad expenses, graduate school, and more. The deadline is in mid-November, and the application opens on August 1st.</p>
+          <h3>See More</h3>
+          <h3>See Less</h3>
+        </div>
+      </div>
+    </div>
+    <div class="opportunity-alt">
+      <div class="container">
+        <h2><a href="">Coca-Cola<i class="fa fa-chevron-circle-right"></i></a></h2>
+        <div class="column-wrapper">
+          <div class="grade">
+            <h3>9, 10, 11, 12</h3>
+          </div>
+          <div class="selectivity">
+            <h3>Selective</h3>
+          </div>
+          <div class="deadline">
+            <h3>January</h3>
+          </div>
+        </div>
+        <div class="info">
+          <p>The Coca-Cola Scholars Foundation supports more than 1,400 exceptional college students each year, with annual scholarships of $3.45 million awarded through 3 nationally recognized programs. 150 Coca-Cola Scholars are selected each year to receive $20,000. Winners travel on an all expenses paid trip to Atlanta, GA for Scholars Weekend, and receive access to an exceptional network and family of dedicated current and former Coca-Cola Scholars. Recipients have up to 10 years to use their scholarship funds, and may use these funds for tuition, laptop costs, study abroad expenses, graduate school, and more. The deadline is in mid-November, and the application opens on August 1st.</p>
+          <h3>See More</h3>
+          <h3>See Less</h3>
+        </div>
+      </div>
+    </div>
+    <div class="opportunity">
+      <div class="container">
+        <h2><a href="">Coca-Cola<i class="fa fa-chevron-circle-right"></i></a></h2>
+        <div class="column-wrapper">
+          <div class="grade">
+            <h3>9, 10, 11, 12</h3>
+          </div>
+          <div class="selectivity">
+            <h3>Selective</h3>
+          </div>
+          <div class="deadline">
+            <h3>January</h3>
+          </div>
+        </div>
+        <div class="info">
+          <p>The Coca-Cola Scholars Foundation supports more than 1,400 exceptional college students each year, with annual scholarships of $3.45 million awarded through 3 nationally recognized programs. 150 Coca-Cola Scholars are selected each year to receive $20,000. Winners travel on an all expenses paid trip to Atlanta, GA for Scholars Weekend, and receive access to an exceptional network and family of dedicated current and former Coca-Cola Scholars. Recipients have up to 10 years to use their scholarship funds, and may use these funds for tuition, laptop costs, study abroad expenses, graduate school, and more. The deadline is in mid-November, and the application opens on August 1st.</p>
+          <h3>See More</h3>
+          <h3>See Less</h3>
+        </div>
+      </div>
+    </div>
+    <div class="opportunity-alt">
+      <div class="container">
+        <h2><a href="">Coca-Cola<i class="fa fa-chevron-circle-right"></i></a></h2>
+        <div class="column-wrapper">
+          <div class="grade">
+            <h3>9, 10, 11, 12</h3>
+          </div>
+          <div class="selectivity">
+            <h3>Selective</h3>
+          </div>
+          <div class="deadline">
+            <h3>January</h3>
+          </div>
+        </div>
+        <div class="info">
+          <p>The Coca-Cola Scholars Foundation supports more than 1,400 exceptional college students each year, with annual scholarships of $3.45 million awarded through 3 nationally recognized programs. 150 Coca-Cola Scholars are selected each year to receive $20,000. Winners travel on an all expenses paid trip to Atlanta, GA for Scholars Weekend, and receive access to an exceptional network and family of dedicated current and former Coca-Cola Scholars. Recipients have up to 10 years to use their scholarship funds, and may use these funds for tuition, laptop costs, study abroad expenses, graduate school, and more. The deadline is in mid-November, and the application opens on August 1st.</p>
+          <h3>See More</h3>
+          <h3>See Less</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

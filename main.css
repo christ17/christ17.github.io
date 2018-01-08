@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
 @font-face {
   font-family: 'League Spartan';
   src: url("media/fonts/leaguespartan.otf"); }
 /* Color Palette */
-html, body, div, p, h1, h2, h3, h4, h5, h6, #navbar ul, .footer-section .socialmedia, .footer-nav ul, .sam, .sravya, .alvin, .jerry, .julie, .neha, .praneeth, .will, .amira, .basil, .sofia, .chris {
+html, body, div, p, h1, h2, h3, h4, h5, h6, #navbar ul, #opportunity-navbar ul, .footer-section .socialmedia, .footer-nav ul, .member-general, .sam, .sravya, .alvin, .jerry, .julie, .neha, .praneeth, .will, .amira, .basil, .sofia, .chris {
   padding: 0px;
   margin: 0px; }
 
@@ -16,21 +16,21 @@ div {
   width: auto;
   min-width: 100vw; }
 
-html, body, div, p {
-  font-family: "Montserrat", sans-serif;
+html, body {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px; }
   @media screen and (min-width: 760px) {
-    html, body, div, p {
+    html, body {
       font-size: 20px; } }
   @media screen and (min-width: 1200px) {
-    html, body, div, p {
+    html, body {
       font-size: 24px; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "League Spartan", sans-serif; }
 
 a {
-  color: black;
+  color: #23282d;
   text-decoration: none; }
 
 a:hover {
@@ -39,7 +39,7 @@ a:hover {
 button:focus {
   outline: 0; }
 
-#navbar {
+#navbar, #opportunity-navbar {
   position: relative;
   top: 0px;
   background-color: #F2F1EF;
@@ -47,39 +47,44 @@ button:focus {
   width: 100%;
   padding: 25px 12.5px;
   z-index: 101; }
-  #navbar .container {
+  #navbar .container, #opportunity-navbar .container {
     height: 100%;
     text-align: right; }
-    #navbar .container > a {
+    #navbar .container > a, #opportunity-navbar .container > a {
       display: inline-block;
       width: auto;
       height: 100%;
       padding: 0px 12.5px 25px 12.5px;
       font-size: 30px;
       color: #6393ce; }
-    #navbar .container > a:first-child {
+    #navbar .container > a:first-child, #opportunity-navbar .container > a:first-child {
       float: left; }
-  #navbar img {
+  #navbar img, #opportunity-navbar img {
     max-height: 100%; }
   @media screen and (max-width: 1023px) {
-    #navbar nav {
+    #navbar nav, #opportunity-navbar nav {
       display: none; } }
   @media screen and (min-width: 1024px) {
-    #navbar nav {
+    #navbar nav, #opportunity-navbar nav {
       display: inline-block; } }
-  #navbar ul {
+  #navbar ul, #opportunity-navbar ul {
     list-style-type: none;
     text-align: center; }
     @media screen and (max-width: 1023px) {
-      #navbar ul li {
+      #navbar ul li, #opportunity-navbar ul li {
         display: block;
         padding: 10px 0px; } }
     @media screen and (min-width: 1024px) {
-      #navbar ul li {
+      #navbar ul li, #opportunity-navbar ul li {
         display: inline-block;
         font-size: 20px;
         padding: 15px 1vw; } }
 
+#opportunity-navbar {
+  position: fixed; }
+
+#menu-button i {
+  vertical-align: bottom; }
 @media screen and (min-width: 1024px) {
   #menu-button {
     display: none !important; } }
@@ -146,9 +151,13 @@ button:focus {
   display: block !important;
   height: calc(100vh - 100px);
   background-color: #F2F1EF;
-  margin: 0px -12.5px !important;
+  margin: 0px -25px !important;
   padding: 0px 15px;
   overflow-y: scroll; }
+  @media screen and (min-width: 760px) {
+    .display-menu {
+      width: calc(100vw - 30px);
+      margin: 0px calc(-5vw) !important; } }
 
 .header-section, .team-header-section, .getinvolved-header-section, .donate-header-section, .index-header-section {
   color: white;
@@ -163,7 +172,7 @@ button:focus {
     padding-top: 0px;
     display: grid;
     align-content: center; } }
-.content-section, .opportunities, .mission, .picture, .no-picture, .coalition, .ambassadors, .grassroots, .representatives, .pageviews, .donation, .pledge {
+.content-section, .opportunities, .mission, .picture, .no-picture, .coalition, .ambassadors, .grassroots, .representatives, .pageviews, .donation, .pledge, .opportunity, .opportunity-alt {
   position: relative;
   height: auto;
   width: 100%;
@@ -224,11 +233,11 @@ button:focus {
   .column-wrapper > div, .footer-nav-wrapper > div {
     float: left; }
 
-.n-cols-2, .footer-nav {
+.n-cols-2, .footer-nav, fieldset ul {
   padding: 15px;
   width: 50% !important; }
 
-.n-cols-3, #opportunities-menu a {
+.n-cols-3, #opportunities-menu a, .grade, .selectivity, .deadline {
   padding: 15px;
   width: 33.3333333333% !important; }
 
@@ -239,11 +248,11 @@ button:focus {
     .n-cols-2-tablet, .tenet {
       width: 50% !important; } }
 
-.n-cols-3-tablet, .opportunity-icon, .member {
+.n-cols-3-tablet, .opportunity-box, .member {
   padding: 15px;
   width: 100%; }
   @media screen and (min-width: 760px) {
-    .n-cols-3-tablet, .opportunity-icon, .member {
+    .n-cols-3-tablet, .opportunity-box, .member {
       width: 33.3333333333% !important; } }
 
 .n-cols-6-tablet {
@@ -255,7 +264,7 @@ button:focus {
 
 .footer-section {
   padding: 5vh 15px;
-  background-color: #4b4b4b; }
+  background-color: #23282d; }
 
 .team-header-section {
   background-image: url("media/backgrounds/team.jpg");
@@ -321,7 +330,7 @@ button:focus {
     color: #4b4b4b; }
 
 .pageviews {
-  background: #4b4b4b;
+  background: #23282d;
   color: white; }
   .pageviews h1, .pageviews h2, .pageviews h3, .pageviews h4, .pageviews h5, .pageviews h6 {
     color: white; }
@@ -426,193 +435,61 @@ button:focus {
 @supports (display: grid) {
   .index-header-section > video {
     margin-top: 0px; } }
-.opportunity-icon {
-  padding: 0px; }
-  .opportunity-icon > a {
+.opportunity-box {
+  padding: calc(0.75vw + 0.75vh) 0px; }
+  .opportunity-box > a {
     display: inline-block;
     width: 100%;
     height: 100%;
     padding: 15px;
     box-sizing: border-box; }
 
-.opportunity-icon:hover {
+.opportunity-box:hover {
   background-color: #eee; }
-  .opportunity-icon:hover > a > div {
-    background-color: #4675b8; }
+  .opportunity-box:hover > a > div {
+    border-color: #4675b8; }
+    .opportunity-box:hover > a > div > div {
+      background-color: #4675b8; }
 
-.awards-icon {
+.opportunity-icon {
   margin: 2.5vh auto;
   width: 50vw;
   height: 50vw;
   font-size: 25vw;
   border-radius: 50%;
-  background-color: #6393ce;
-  color: white; }
-  .awards-icon > img {
+  border: 2.5px solid #6393ce;
+  background-color: transparent;
+  padding: 5px; }
+  .opportunity-icon > img {
     width: 100%;
     height: 100%;
     border-radius: 50%; }
-  .awards-icon > i {
+  .opportunity-icon > i {
     margin-top: 12.5vw; }
   @media screen and (min-width: 760px) {
-    .awards-icon {
+    .opportunity-icon {
       width: 15vw;
       height: 15vw;
       font-size: 7.5vw; }
-      .awards-icon > i {
+      .opportunity-icon > i {
         margin-top: 3.75vw; } }
   @media screen and (min-width: 1024px) {
-    .awards-icon {
-      width: 15vw;
-      height: 15vw;
-      font-size: 7.5vw; }
-      .awards-icon > i {
-        margin-top: 3.75vw; } }
+    .opportunity-icon {
+      width: 10vw;
+      height: 10vw;
+      font-size: 5vw; }
+      .opportunity-icon > i {
+        margin-top: 2.5vw; } }
 
-.flyins-icon {
-  margin: 2.5vh auto;
-  width: 50vw;
-  height: 50vw;
-  font-size: 25vw;
+.opportunity-icon-general, .awards-icon, .flyins-icon, .internships-icon, .scholarships-icon, .studyabroad-icon, .summerprograms-icon {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #6393ce;
-  color: white; }
-  .flyins-icon > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .flyins-icon > i {
-    margin-top: 12.5vw; }
-  @media screen and (min-width: 760px) {
-    .flyins-icon {
-      width: 15vw;
-      height: 15vw;
-      font-size: 7.5vw; }
-      .flyins-icon > i {
-        margin-top: 3.75vw; } }
-  @media screen and (min-width: 1024px) {
-    .flyins-icon {
-      width: 15vw;
-      height: 15vw;
-      font-size: 7.5vw; }
-      .flyins-icon > i {
-        margin-top: 3.75vw; } }
-
-.internships-icon {
-  margin: 2.5vh auto;
-  width: 50vw;
-  height: 50vw;
-  font-size: 25vw;
-  border-radius: 50%;
-  background-color: #6393ce;
-  color: white; }
-  .internships-icon > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .internships-icon > i {
-    margin-top: 12.5vw; }
-  @media screen and (min-width: 760px) {
-    .internships-icon {
-      width: 15vw;
-      height: 15vw;
-      font-size: 7.5vw; }
-      .internships-icon > i {
-        margin-top: 3.75vw; } }
-  @media screen and (min-width: 1024px) {
-    .internships-icon {
-      width: 15vw;
-      height: 15vw;
-      font-size: 7.5vw; }
-      .internships-icon > i {
-        margin-top: 3.75vw; } }
-
-.scholarships-icon {
-  margin: 2.5vh auto;
-  width: 50vw;
-  height: 50vw;
-  font-size: 25vw;
-  border-radius: 50%;
-  background-color: #6393ce;
-  color: white; }
-  .scholarships-icon > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .scholarships-icon > i {
-    margin-top: 12.5vw; }
-  @media screen and (min-width: 760px) {
-    .scholarships-icon {
-      width: 15vw;
-      height: 15vw;
-      font-size: 7.5vw; }
-      .scholarships-icon > i {
-        margin-top: 3.75vw; } }
-  @media screen and (min-width: 1024px) {
-    .scholarships-icon {
-      width: 15vw;
-      height: 15vw;
-      font-size: 7.5vw; }
-      .scholarships-icon > i {
-        margin-top: 3.75vw; } }
-
-.studyabroad-icon {
-  margin: 2.5vh auto;
-  width: 50vw;
-  height: 50vw;
-  font-size: 25vw;
-  border-radius: 50%;
-  background-color: #6393ce;
-  color: white; }
-  .studyabroad-icon > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .studyabroad-icon > i {
-    margin-top: 12.5vw; }
-  @media screen and (min-width: 760px) {
-    .studyabroad-icon {
-      width: 15vw;
-      height: 15vw;
-      font-size: 7.5vw; }
-      .studyabroad-icon > i {
-        margin-top: 3.75vw; } }
-  @media screen and (min-width: 1024px) {
-    .studyabroad-icon {
-      width: 15vw;
-      height: 15vw;
-      font-size: 7.5vw; }
-      .studyabroad-icon > i {
-        margin-top: 3.75vw; } }
-
-.summerprograms-icon {
-  margin: 2.5vh auto;
-  width: 50vw;
-  height: 50vw;
-  font-size: 25vw;
-  border-radius: 50%;
-  background-color: #6393ce;
-  color: white; }
-  .summerprograms-icon > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .summerprograms-icon > i {
-    margin-top: 12.5vw; }
-  @media screen and (min-width: 760px) {
-    .summerprograms-icon {
-      width: 15vw;
-      height: 15vw;
-      font-size: 7.5vw; }
-      .summerprograms-icon > i {
-        margin-top: 3.75vw; } }
-  @media screen and (min-width: 1024px) {
-    .summerprograms-icon {
-      width: 15vw;
-      height: 15vw;
-      font-size: 7.5vw; }
-      .summerprograms-icon > i {
-        margin-top: 3.75vw; } }
+  color: white;
+  font-size: inherit; }
+  .opportunity-icon-general > i, .awards-icon > i, .flyins-icon > i, .internships-icon > i, .scholarships-icon > i, .studyabroad-icon > i, .summerprograms-icon > i {
+    margin-top: 25%; }
 
 .mission {
   height: calc(100vh - 100px);
@@ -697,409 +574,125 @@ button:focus {
   font-size: .65em;
   margin-top: 2.5px; }
 
-.sam {
+.member-general, .sam, .sravya, .alvin, .jerry, .julie, .neha, .praneeth, .will, .amira, .basil, .sofia, .chris {
   margin: 2.5vh auto;
   width: 80vw;
   height: 80vw;
   font-size: 40vw;
   border-radius: 50%;
-  background: url("media/images/team/sam.png");
-  background-size: cover;
   border: 10px solid #eee; }
-  .sam > img {
+  .member-general > img, .sam > img, .sravya > img, .alvin > img, .jerry > img, .julie > img, .neha > img, .praneeth > img, .will > img, .amira > img, .basil > img, .sofia > img, .chris > img {
     width: 100%;
     height: 100%;
     border-radius: 50%; }
-  .sam > i {
+  .member-general > i, .sam > i, .sravya > i, .alvin > i, .jerry > i, .julie > i, .neha > i, .praneeth > i, .will > i, .amira > i, .basil > i, .sofia > i, .chris > i {
     margin-top: 20vw; }
   @media screen and (min-width: 760px) {
-    .sam {
+    .member-general, .sam, .sravya, .alvin, .jerry, .julie, .neha, .praneeth, .will, .amira, .basil, .sofia, .chris {
       width: 20vw;
       height: 20vw;
       font-size: 10vw; }
-      .sam > i {
+      .member-general > i, .sam > i, .sravya > i, .alvin > i, .jerry > i, .julie > i, .neha > i, .praneeth > i, .will > i, .amira > i, .basil > i, .sofia > i, .chris > i {
         margin-top: 5vw; } }
   @media screen and (min-width: 1024px) {
-    .sam {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .sam > i {
-        margin-top: 5vw; } }
+    .member-general, .sam, .sravya, .alvin, .jerry, .julie, .neha, .praneeth, .will, .amira, .basil, .sofia, .chris {
+      width: 17.5vw;
+      height: 17.5vw;
+      font-size: 8.75vw; }
+      .member-general > i, .sam > i, .sravya > i, .alvin > i, .jerry > i, .julie > i, .neha > i, .praneeth > i, .will > i, .amira > i, .basil > i, .sofia > i, .chris > i {
+        margin-top: 4.375vw; } }
+
+.sam {
+  background: url("media/images/team/sam.png");
+  background-size: cover; }
 
 .sam:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/sam.png");
   background-size: cover; }
 
 .sravya {
-  margin: 2.5vh auto;
-  width: 80vw;
-  height: 80vw;
-  font-size: 40vw;
-  border-radius: 50%;
   background: url("media/images/team/sravya.png");
-  background-size: cover;
-  border: 10px solid #eee; }
-  .sravya > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .sravya > i {
-    margin-top: 20vw; }
-  @media screen and (min-width: 760px) {
-    .sravya {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .sravya > i {
-        margin-top: 5vw; } }
-  @media screen and (min-width: 1024px) {
-    .sravya {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .sravya > i {
-        margin-top: 5vw; } }
+  background-size: cover; }
 
 .sravya:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/sravya.png");
   background-size: cover; }
 
 .alvin {
-  margin: 2.5vh auto;
-  width: 80vw;
-  height: 80vw;
-  font-size: 40vw;
-  border-radius: 50%;
   background: url("media/images/team/alvin.png");
-  background-size: cover;
-  border: 10px solid #eee; }
-  .alvin > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .alvin > i {
-    margin-top: 20vw; }
-  @media screen and (min-width: 760px) {
-    .alvin {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .alvin > i {
-        margin-top: 5vw; } }
-  @media screen and (min-width: 1024px) {
-    .alvin {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .alvin > i {
-        margin-top: 5vw; } }
+  background-size: cover; }
 
 .alvin:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/alvin.png");
   background-size: cover; }
 
 .jerry {
-  margin: 2.5vh auto;
-  width: 80vw;
-  height: 80vw;
-  font-size: 40vw;
-  border-radius: 50%;
   background: url("media/images/team/jerry.png");
-  background-size: cover;
-  border: 10px solid #eee; }
-  .jerry > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .jerry > i {
-    margin-top: 20vw; }
-  @media screen and (min-width: 760px) {
-    .jerry {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .jerry > i {
-        margin-top: 5vw; } }
-  @media screen and (min-width: 1024px) {
-    .jerry {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .jerry > i {
-        margin-top: 5vw; } }
+  background-size: cover; }
 
 .jerry:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/jerry.png");
   background-size: cover; }
 
 .julie {
-  margin: 2.5vh auto;
-  width: 80vw;
-  height: 80vw;
-  font-size: 40vw;
-  border-radius: 50%;
   background: url("media/images/team/julie.png");
-  background-size: cover;
-  border: 10px solid #eee; }
-  .julie > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .julie > i {
-    margin-top: 20vw; }
-  @media screen and (min-width: 760px) {
-    .julie {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .julie > i {
-        margin-top: 5vw; } }
-  @media screen and (min-width: 1024px) {
-    .julie {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .julie > i {
-        margin-top: 5vw; } }
+  background-size: cover; }
 
 .julie:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/julie.png");
   background-size: cover; }
 
 .neha {
-  margin: 2.5vh auto;
-  width: 80vw;
-  height: 80vw;
-  font-size: 40vw;
-  border-radius: 50%;
   background: url("media/images/team/neha.png");
-  background-size: cover;
-  border: 10px solid #eee; }
-  .neha > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .neha > i {
-    margin-top: 20vw; }
-  @media screen and (min-width: 760px) {
-    .neha {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .neha > i {
-        margin-top: 5vw; } }
-  @media screen and (min-width: 1024px) {
-    .neha {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .neha > i {
-        margin-top: 5vw; } }
+  background-size: cover; }
 
 .neha:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/neha.png");
   background-size: cover; }
 
 .praneeth {
-  margin: 2.5vh auto;
-  width: 80vw;
-  height: 80vw;
-  font-size: 40vw;
-  border-radius: 50%;
   background: url("media/images/team/praneeth.png");
-  background-size: cover;
-  border: 10px solid #eee; }
-  .praneeth > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .praneeth > i {
-    margin-top: 20vw; }
-  @media screen and (min-width: 760px) {
-    .praneeth {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .praneeth > i {
-        margin-top: 5vw; } }
-  @media screen and (min-width: 1024px) {
-    .praneeth {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .praneeth > i {
-        margin-top: 5vw; } }
+  background-size: cover; }
 
 .praneeth:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/praneeth.png");
   background-size: cover; }
 
 .will {
-  margin: 2.5vh auto;
-  width: 80vw;
-  height: 80vw;
-  font-size: 40vw;
-  border-radius: 50%;
   background: url("media/images/team/will.png");
-  background-size: cover;
-  border: 10px solid #eee; }
-  .will > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .will > i {
-    margin-top: 20vw; }
-  @media screen and (min-width: 760px) {
-    .will {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .will > i {
-        margin-top: 5vw; } }
-  @media screen and (min-width: 1024px) {
-    .will {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .will > i {
-        margin-top: 5vw; } }
+  background-size: cover; }
 
 .will:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/will.png");
   background-size: cover; }
 
 .amira {
-  margin: 2.5vh auto;
-  width: 80vw;
-  height: 80vw;
-  font-size: 40vw;
-  border-radius: 50%;
   background: url("media/images/team/amira.png");
-  background-size: cover;
-  border: 10px solid #eee; }
-  .amira > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .amira > i {
-    margin-top: 20vw; }
-  @media screen and (min-width: 760px) {
-    .amira {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .amira > i {
-        margin-top: 5vw; } }
-  @media screen and (min-width: 1024px) {
-    .amira {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .amira > i {
-        margin-top: 5vw; } }
+  background-size: cover; }
 
 .amira:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/amira.png");
   background-size: cover; }
 
 .basil {
-  margin: 2.5vh auto;
-  width: 80vw;
-  height: 80vw;
-  font-size: 40vw;
-  border-radius: 50%;
   background: url("media/images/team/basil.png");
-  background-size: cover;
-  border: 10px solid #eee; }
-  .basil > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .basil > i {
-    margin-top: 20vw; }
-  @media screen and (min-width: 760px) {
-    .basil {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .basil > i {
-        margin-top: 5vw; } }
-  @media screen and (min-width: 1024px) {
-    .basil {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .basil > i {
-        margin-top: 5vw; } }
+  background-size: cover; }
 
 .basil:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/basil.png");
   background-size: cover; }
 
 .sofia {
-  margin: 2.5vh auto;
-  width: 80vw;
-  height: 80vw;
-  font-size: 40vw;
-  border-radius: 50%;
   background: url("media/images/team/sofia.png");
-  background-size: cover;
-  border: 10px solid #eee; }
-  .sofia > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .sofia > i {
-    margin-top: 20vw; }
-  @media screen and (min-width: 760px) {
-    .sofia {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .sofia > i {
-        margin-top: 5vw; } }
-  @media screen and (min-width: 1024px) {
-    .sofia {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .sofia > i {
-        margin-top: 5vw; } }
+  background-size: cover; }
 
 .sofia:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/sofia.png");
   background-size: cover; }
 
 .chris {
-  margin: 2.5vh auto;
-  width: 80vw;
-  height: 80vw;
-  font-size: 40vw;
-  border-radius: 50%;
   background: url("media/images/team/chris.png");
-  background-size: cover;
-  border: 10px solid #eee; }
-  .chris > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%; }
-  .chris > i {
-    margin-top: 20vw; }
-  @media screen and (min-width: 760px) {
-    .chris {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .chris > i {
-        margin-top: 5vw; } }
-  @media screen and (min-width: 1024px) {
-    .chris {
-      width: 20vw;
-      height: 20vw;
-      font-size: 10vw; }
-      .chris > i {
-        margin-top: 5vw; } }
+  background-size: cover; }
 
 .chris:hover {
   background: linear-gradient(rgba(99, 147, 206, 0.8), rgba(99, 147, 206, 0.8)), url("media/images/team/chris.png");
@@ -1109,13 +702,7 @@ button:focus {
   width: calc(100% - 30px); }
 
 /* Get Involved */
-.coalition {
-  padding-bottom: 15vh; }
-
-.ambassadors {
-  padding-bottom: 15vh; }
-
-.grassroots {
+.get-involved-padding, .coalition, .ambassadors, .grassroots {
   padding-bottom: 15vh; }
 
 .getinvolved-icon, .ambassadors-icon, .grassroots-icon {
@@ -1229,5 +816,217 @@ a[href="#donate"] {
   padding: 1.5vh 2.5vw; }
   .tenet h2 {
     color: #6393ce; }
+
+#opportunity-navbar + .body {
+  padding-top: 100px; }
+
+@media screen and (max-width: 1023px), screen and (orientation: portrait) {
+  .body > button {
+    position: fixed;
+    top: 67vh;
+    left: -5vh;
+    z-index: 11;
+    transform: rotate(90deg);
+    opacity: 0.9;
+    border: 0px;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+    box-shadow: 0 0 0.5vh #737373;
+    background-color: #F2F1EF;
+    color: #4b4b4b;
+    font-family: 'League Spartan';
+    font-size: 2.5vh;
+    letter-spacing: .5px;
+    padding: 1vh 3.5vh; } }
+@media screen and (min-width: 1024px) {
+  .body > button {
+    display: none; } }
+
+#filter-menu {
+  position: fixed;
+  z-index: 100;
+  left: 0px;
+  top: 100px;
+  height: calc(100vh - 100px);
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+  width: 25%;
+  color: #aaa;
+  padding: 5vh 0px;
+  background-color: #23282d; }
+  #filter-menu a {
+    color: white; }
+  @media screen and (max-width: 1023px), screen and (orientation: portrait) {
+    #filter-menu {
+      display: none;
+      width: 100vw; } }
+
+@media screen and (max-width: 1023px), screen and (orientation: portrait) {
+  #filter-menu > .fa-times {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: white; } }
+@media screen and (min-width: 1024px) {
+  #filter-menu > .fa-times {
+    display: none; } }
+
+#filter-menu form {
+  text-align: left; }
+  #filter-menu form fieldset {
+    border: 0px; }
+  #filter-menu form h3 {
+    padding-bottom: 1vh; }
+  #filter-menu form hr {
+    margin: 0px;
+    border: 1px solid #aaa; }
+
+label:hover {
+  cursor: pointer; }
+
+input {
+  display: none; }
+
+input + label {
+  display: inline-block;
+  background-color: white;
+  color: #6393ce;
+  border-radius: 20%;
+  width: 24px;
+  height: 24px;
+  text-align: center; }
+  @media screen and (min-width: 760px) {
+    input + label {
+      width: 30px;
+      height: 30px; } }
+  @media screen and (min-width: 1200px) {
+    input + label {
+      width: 36px;
+      height: 36px; } }
+  input + label i {
+    vertical-align: middle; }
+
+input:checked + label {
+  background-color: #6393ce;
+  color: white; }
+
+input[name="grade"] + label {
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  margin: 2vh 1vh 1vh 1vh; }
+  @media screen and (min-width: 760px) {
+    input[name="grade"] + label {
+      width: 36px;
+      height: 36px; } }
+  @media screen and (min-width: 1200px) {
+    input[name="grade"] + label {
+      width: 42px;
+      height: 42px; } }
+  input[name="grade"] + label h4 {
+    display: inline-block;
+    margin-top: 20%; }
+
+fieldset ul {
+  float: left;
+  padding: 1vh 0px 1vh 15px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style-type: none; }
+  fieldset ul li {
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 32px; }
+    @media screen and (min-width: 760px) {
+      fieldset ul li {
+        height: 40px; } }
+    @media screen and (min-width: 1200px) {
+      fieldset ul li {
+        height: 48px; } }
+
+input[type="submit"] {
+  display: block;
+  margin: 3.5vh auto 50px auto;
+  width: 100%;
+  max-width: 300px;
+  padding: 1vh 0px;
+  background-color: white;
+  color: #6393ce;
+  font-family: 'League Spartan';
+  font-size: 24px;
+  border-radius: 1vh; }
+  @media screen and (min-width: 1024px) {
+    input[type="submit"] {
+      display: none; } }
+
+.opportunity, .opportunity-alt {
+  padding: 5vh 0px;
+  color: white;
+  background-color: #6393ce;
+  overflow: auto; }
+  .opportunity a, .opportunity-alt a {
+    color: white; }
+  .opportunity i, .opportunity-alt i {
+    margin-left: 0.5em; }
+
+.opportunity a:hover, .opportunity-alt a:hover {
+  text-decoration: underline; }
+
+.opportunity > .container, .opportunity-alt > .container {
+  padding: 0px 15px; }
+  @media screen and (min-width: 1024px) {
+    .opportunity > .container, .opportunity-alt > .container {
+      width: 75%;
+      float: right;
+      padding: 0px 5vw; } }
+
+.opportunity-alt {
+  background-color: #4675b8; }
+
+.grade, .selectivity, .deadline {
+  padding: 0px 1vh; }
+  .grade > h3, .selectivity > h3, .deadline > h3 {
+    margin: 0px;
+    border-radius: 1vh;
+    padding: 1.5vh 0px; }
+
+.grade > h3 {
+  background-color: #9a86c5; }
+
+.selectivity > h3 {
+  background-color: #d59bc9; }
+
+.deadline > h3 {
+  background-color: #fbb4c8; }
+
+.info {
+  background-color: #BFD7F4;
+  border-radius: 1vh;
+  margin: 2vh 1vh 7.5px 1vh;
+  padding: 2vh; }
+  .info p {
+    color: #23282d;
+    text-align: left;
+    height: auto;
+    max-height: 15vh;
+    overflow-y: hidden; }
+  .info h3 {
+    color: #4675b8;
+    padding: 15px 0px 0px 0px; }
+  .info h3:last-child {
+    display: none; }
+  @media screen and (min-width: 760px) {
+    .info p {
+      text-align: justify;
+      max-height: none;
+      overflow-y: auto; }
+    .info h3 {
+      display: none; } }
+
+.see-more {
+  max-height: none !important;
+  overflow-y: auto !important; }
 
 /*# sourceMappingURL=main.css.map */
