@@ -507,6 +507,9 @@ button:focus {
     position: relative;
     top: calc(50% - 25px); }
 
+.slide:hover, #slide-left:hover, #slide-right:hover {
+  color: #23282d; }
+
 #slide-left {
   left: 0px; }
 
