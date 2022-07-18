@@ -139,6 +139,7 @@ h1, h4, h5, h6 {
   #menu ul {
     background-color: #080808;
     position: absolute;
+    visibility: hidden;
     top: 0;
     left: 0;
     z-index: 100;
@@ -177,6 +178,7 @@ h1, h4, h5, h6 {
 @media screen and (max-width: 760px) {
   #menu.menu-toggled ul {
     opacity: 1;
+    visibility: visible;
   }
   #menu.menu-toggled #logo a {
     color: #f8f8f8;
